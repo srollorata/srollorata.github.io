@@ -1,0 +1,93 @@
+:root {
+    --heading-font-family: "JosefinSans-Regular", Helvetica;
+    --heading-font-weight: 400;
+    --heading-font-size: 36px;
+    --heading-letter-spacing: 0px;
+    --heading-line-height: normal;
+    --heading-font-style: normal;
+    --body-font-family: "JosefinSans-Regular", Helvetica;
+    --body-font-weight: 400;
+    --body-font-size: 15px;
+    --body-letter-spacing: 0px;
+    --body-line-height: normal;
+    --body-font-style: normal;
+    --CV-h1-b-font-family: "CenturyGothic-Bold", Helvetica;
+    --CV-h1-b-font-weight: 700;
+    --CV-h1-b-font-size: 26px;
+    --CV-h1-b-letter-spacing: 0px;
+    --CV-h1-b-line-height: normal;
+    --CV-h1-b-font-style: normal;
+    --CV-h1-font-family: "CenturyGothic-Regular", Helvetica;
+    --CV-h1-font-weight: 400;
+    --CV-h1-font-size: 26px;
+    --CV-h1-letter-spacing: 0px;
+    --CV-h1-line-height: normal;
+    --CV-h1-font-style: normal;
+    --CV-h6-font-family: "CenturyGothic-Bold", Helvetica;
+    --CV-h6-font-weight: 700;
+    --CV-h6-font-size: 12px;
+    --CV-h6-letter-spacing: 0px;
+    --CV-h6-line-height: normal;
+    --CV-h6-font-style: normal;
+    --CV-content-b-font-family: "CenturyGothic-Bold", Helvetica;
+    --CV-content-b-font-weight: 700;
+    --CV-content-b-font-size: 8px;
+    --CV-content-b-letter-spacing: 0px;
+    --CV-content-b-line-height: normal;
+    --CV-content-b-font-style: normal;
+    --CV-content-font-family: "CenturyGothic-Regular", Helvetica;
+    --CV-content-font-weight: 400;
+    --CV-content-font-size: 8px;
+    --CV-content-letter-spacing: 0px;
+    --CV-content-line-height: normal;
+    --CV-content-font-style: normal;
+    --collection-1-bg-color: rgba(255, 255, 255, 1);
+    --collection-1-container1-color: rgba(231, 231, 231, 1);
+    --collection-1-container2-color: rgba(255, 255, 255, 1);
+    --collection-1-txt-color: rgba(14, 14, 14, 1);
+    --collection-1-hover-color: rgba(49, 49, 49, 1);
+}
+
+/*
+
+To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
+
+<body data-collection-1-mode="mode-1">
+        <!-- the rest of your content -->
+</body>
+
+You can apply the theme on any DOM node, not just the `body`
+
+*/
+
+[data-collection-1-mode="mode-1"] {
+    --collection-1-bg-color: rgba(255, 255, 255, 1);
+    --collection-1-container1-color: rgba(231, 231, 231, 1);
+    --collection-1-container2-color: rgba(255, 255, 255, 1);
+    --collection-1-txt-color: rgba(14, 14, 14, 1);
+    --collection-1-hover-color: rgba(49, 49, 49, 1);
+}
+
+[data-collection-1-mode="mode-2"] {
+    --collection-1-bg-color: rgba(231, 231, 231, 1);
+    --collection-1-container1-color: rgba(255, 255, 255, 1);
+    --collection-1-container2-color: rgba(190, 190, 190, 1);
+    --collection-1-txt-color: rgba(49, 49, 49, 1);
+    --collection-1-hover-color: rgba(255, 255, 255, 1);
+}
+
+[data-collection-1-mode="mode-3"] {
+    --collection-1-bg-color: rgba(49, 49, 49, 1);
+    --collection-1-container1-color: rgba(14, 14, 14, 1);
+    --collection-1-container2-color: rgba(54, 54, 54, 1);
+    --collection-1-txt-color: rgba(186, 186, 186, 1);
+    --collection-1-hover-color: rgba(14, 14, 14, 1);
+}
+
+[data-collection-1-mode="mode-4"] {
+    --collection-1-bg-color: rgba(14, 14, 14, 1);
+    --collection-1-container1-color: rgba(49, 49, 49, 1);
+    --collection-1-container2-color: rgba(22, 22, 22, 1);
+    --collection-1-txt-color: rgba(255, 255, 255, 1);
+    --collection-1-hover-color: rgba(231, 231, 231, 1);
+}
