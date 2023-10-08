@@ -1,0 +1,13 @@
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+
+#hero {
+    background: url("../img/wyn-bg.jpg") top right no-repeat !important;
+}
+
+#hero:before {
+    background: rgba(255, 255, 255, 0.438) !important;
+}
+
+  
