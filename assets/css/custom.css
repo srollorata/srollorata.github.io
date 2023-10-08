@@ -3,11 +3,71 @@
 --------------------------------------------------------------*/
 
 #hero {
-    background: url("../img/wyn-bg.jpg") top right no-repeat !important;
+    background: url("../img/wyn-bg-var1.jpg") right no-repeat !important;
+    background-size: cover !important;
 }
 
 #hero:before {
-    background: rgba(255, 255, 255, 0.438) !important;
+    background: rgba(255, 255, 255, 0.774) !important;
 }
 
-  
+
+/*--------------------------------------------------------------
+# Animated Shapes
+--------------------------------------------------------------*/
+
+@keyframes slide {
+    0% { transform: translateX(-100%); }
+    50% { transform: translateX(50%) translateY(-50px) rotate(45deg); }
+    100% { transform: translateX(100%) translateY(0) rotate(0deg); }
+  }
+
+  @keyframes jump {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-30px); }
+    60% { transform: translateY(-15px); }
+  }
+
+  @keyframes rotate {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(180deg);}
+    100% { transform: rotate(360deg); }
+  }
+
+  @keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(40px);
+    }
+  }
+
+  @keyframes slight-moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+  }
+
+  .diamond {
+    width: 150px;
+    height: 150px;
+    top: 0;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #0563bb2d ;
+    position: absolute;
+    rotate: 45deg;
+    animation: moveUpDown 10s infinite ;
+  }
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+
+#profile-transparent:hover {
+    animation: slight-moveUpDown 2s infinite;
+}
