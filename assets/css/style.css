@@ -452,11 +452,14 @@ section {
 --------------------------------------------------------------*/
 .facts .count-box {
   padding: 30px 30px 25px 30px;
-  margin-top: 30px;
+  
   width: 100%;
   position: relative;
   text-align: center;
+  justify-content: center;
   background: #fff;
+  height: 100%;
+  border: 1px solid #136F63;
 }
 
 .facts .count-box i {
@@ -601,6 +604,7 @@ section {
   background: #fff;
   border-radius: 50px;
   padding: 2px 15px;
+  
 }
 
 .portfolio #portfolio-flters li {
@@ -632,6 +636,13 @@ section {
   z-index: 1;
   background: rgba(69, 80, 91, 0.8);
   border-radius: 15px;
+  aspect-ratio: 1 / 1;
+}
+
+.portfolio-item .portfolio-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .portfolio .portfolio-wrap::before {
@@ -709,6 +720,7 @@ section {
 .portfolio .portfolio-wrap .portfolio-links {
   text-align: center;
   z-index: 4;
+  aspect-ratio: 1/1;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
@@ -729,6 +741,7 @@ section {
   right: 0;
   bottom: 0;
   opacity: 1;
+  
 }
 
 .portfolio .portfolio-wrap:hover .portfolio-info {
