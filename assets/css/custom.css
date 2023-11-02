@@ -5,6 +5,7 @@
 #hero {
     background: url("../img/wyn-bg-var1.jpg") right no-repeat !important;
     background-size: cover !important;
+    
 }
 
 #hero:before {
@@ -40,6 +41,17 @@
     top: 50%;
     transform: translateY(-50%);
   }
+
+  @media (max-width: 450px){
+    .section-title h2::before {
+      left: -250px !important; /* Adjust the distance of the line from the text */
+    }
+    
+    .section-title h2::after {
+      right: -250px !important; /* Adjust the distance of the line from the text */
+    }
+    
+  }
   
   .section-title h2::before {
     left: -325px; /* Adjust the distance of the line from the text */
@@ -60,7 +72,7 @@
 # Animated Shapes
 --------------------------------------------------------------*/
 
-@keyframes slide {
+  @keyframes slide {
     0% { transform: translateX(-100%); }
     50% { transform: translateX(50%) translateY(-50px) rotate(45deg); }
     100% { transform: translateX(100%) translateY(0) rotate(0deg); }
@@ -86,6 +98,33 @@
     50% {
       transform: translate(0px, -60px) ;
       
+    }
+  }
+
+  @keyframes square-anim {
+    0% {
+      filter: blur(0px);
+      outline: none;
+    }
+  
+    25% {
+      filter: blur(5px);
+      outline: 1px solid #000;
+    }
+  
+    50% {
+      filter: blur(10px);
+      outline: 2px solid #000;
+    }
+  
+    75% {
+      filter: blur(15px);
+      outline: 3px solid #000;
+    }
+  
+    100% {
+      filter: blur(20px);
+      outline: 4px solid #000;
     }
   }
 
@@ -141,9 +180,9 @@
   }
 
   .square3 {
-    background-color: #136F63;
+    background-color: #22aaa1;
     position: absolute;
-    top: 400px;
+    top: 70%;
     right: 150px;
     width: 100px;
     height: 100px;
@@ -152,11 +191,15 @@
     rotate: 45deg;
     animation: moveUpDown 15s infinite;
   }
+
+  .square3 img {
+    rotate: -45deg;
+  }
   
   .square4 {
     background-color: #136F6363;
     position: absolute;
-    top: 500px;
+    top: 80%;
     right: 100px;
     width: 50px;
     height: 50px;
@@ -169,7 +212,7 @@
   .square5 {
     background-color: #136f6363;
     position: absolute;
-    top: 500px;
+    top: 80%;
     right: 250px;
     width: 50px;
     height: 50px;
@@ -179,6 +222,19 @@
     animation: moveUpDown 15s infinite;
   }
 
+  .square6 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #136f63;
+    animation: square-anim 5s linear infinite alternate;
+  }
+
+  @keyframes moveSquare {
+    to {
+      transform: translateX(calc(100vw - 50px));
+    }
+  }
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
@@ -187,6 +243,7 @@
     background-color: #ffffff;
     color: #136F63;
     overflow: hidden;
+    
 }
 
 #profile-transparent:hover {
@@ -263,8 +320,8 @@
     width: 0 !important;
     height: 0 !important;
     color: #0563bb !important;
-    top: auto !important;
-    left: auto !important;
+    top: 0 !important;
+    left: 0 !important;
     font-size: 30px;
 }
 
