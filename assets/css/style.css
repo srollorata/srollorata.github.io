@@ -24,6 +24,14 @@ a:hover {
   text-decoration: none;
 }
 
+#model-container canvas {
+  width: 100% !important;
+  height: 100vh !important;
+  position: absolute;
+  top: 100px;
+  left: 0;
+}
+
 h1,
 h2,
 h3,
@@ -52,12 +60,12 @@ h6 {
 
 .back-to-top i {
   font-size: 28px;
-  color: #136F63;
+  color: #136f63;
   line-height: 0;
 }
 
 .back-to-top:hover {
-  background: #136F63;
+  background: #136f63;
   color: #fff;
 }
 
@@ -143,7 +151,6 @@ h6 {
 @media (min-width: 991px) {
   #main {
     margin-left: 100px;
-    
   }
 }
 
@@ -164,7 +171,7 @@ h6 {
   list-style: none;
 }
 
-.nav-menu>ul>li {
+.nav-menu > ul > li {
   position: relative;
   white-space: nowrap;
 }
@@ -173,12 +180,12 @@ h6 {
 .nav-menu a:focus {
   display: flex;
   align-items: center;
-  color: #136F63;
+  color: #136f63;
   padding: 10px 18px;
   margin-bottom: 8px;
   transition: 0.3s;
   font-size: 15px;
-  border-left: 5px solid #136F63;
+  border-left: 5px solid #136f63;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   /* background: #e2e2e2; */
@@ -200,7 +207,6 @@ h6 {
 }
 
 @media (min-width: 992px) {
-
   .nav-menu a,
   .nav-menu a:focus {
     width: 56px;
@@ -215,34 +221,31 @@ h6 {
   .nav-menu1 {
     display: none !important;
   }
-  
 }
 
 .nav-menu a:hover,
 .nav-menu .active,
 .nav-menu .active:focus,
-.nav-menu li:hover>a {
+.nav-menu li:hover > a {
   color: #ffffff;
-  background: #136F63;
-
+  background: #136f63;
 }
-
 
 .nav-menu a:hover span,
 .nav-menu .active span,
 .nav-menu .active:focus span,
-.nav-menu li:hover>a span {
+.nav-menu li:hover > a span {
   color: #fff;
 }
 
 .nav-menu a:hover,
-.nav-menu li:hover>a {
+.nav-menu li:hover > a {
   width: 100%;
   color: #fff;
 }
 
 .nav-menu a:hover span,
-.nav-menu li:hover>a span {
+.nav-menu li:hover > a span {
   display: block;
 }
 
@@ -367,7 +370,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px ;
+  padding: 60px;
   overflow: hidden;
 }
 
@@ -439,7 +442,7 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #136F63;
+  color: #136f63;
   line-height: 0;
 }
 
@@ -452,14 +455,14 @@ section {
 --------------------------------------------------------------*/
 .facts .count-box {
   padding: 30px 30px 25px 30px;
-  
+
   width: 100%;
   position: relative;
   text-align: center;
   justify-content: center;
   background: #fff;
   height: 100%;
-  border: 1px solid #136F63;
+  border: 1px solid #136f63;
 }
 
 .facts .count-box i {
@@ -604,7 +607,6 @@ section {
   background: #fff;
   border-radius: 50px;
   padding: 2px 15px;
-  
 }
 
 .portfolio #portfolio-flters li {
@@ -744,7 +746,6 @@ section {
   right: 0;
   bottom: 0;
   opacity: 1;
-  
 }
 
 .portfolio .portfolio-wrap:hover .portfolio-info {
@@ -778,7 +779,10 @@ section {
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -786,7 +790,10 @@ section {
   border: 1px solid #22aaa1;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
   background-color: #22aaa1;
 }
 
@@ -810,7 +817,7 @@ section {
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
 
@@ -1112,7 +1119,7 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -1151,8 +1158,8 @@ section {
   font-size: 14px;
 }
 
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email] {
+.contact .php-email-form input[type="text"],
+.contact .php-email-form input[type="email"] {
   height: 44px;
 }
 
@@ -1160,7 +1167,7 @@ section {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: #22aaa1;
   border: 0;
   padding: 10px 35px;
@@ -1169,7 +1176,7 @@ section {
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #0678e3;
 }
 

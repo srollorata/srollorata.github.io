@@ -3,251 +3,274 @@
 --------------------------------------------------------------*/
 
 #hero {
-    background: url("../img/wyn-bg-var1.jpg") right no-repeat !important;
-    background-size: cover !important;
-    
+  background: url("../img/wyn-bg-var1.jpg") right no-repeat !important;
+  background-size: cover !important;
 }
 
 #hero:before {
-    background: rgba(255, 255, 255, 0.774) !important;
+  background: rgba(255, 255, 255, 0.774) !important;
 }
 
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
 
- /* Section Title Styles */
+/* Section Title Styles */
 .section-title {
-    text-align: center;
-    margin-bottom: 30px;
-    
-  }
-  
-  .section-title h2 {
-    position: relative;
-    display: inline-block;
-    font-size: 28px;
-    font-weight: bold;
-    color: #136F63; /* Set your desired text color */
-  }
-  
-  .section-title h2::before,
-  .section-title h2::after {
-    content: '';
-    position: absolute;
-    height: 2px; /* Adjust the height of the line */
-    width: 200px; /* Adjust the width of the line */
-    background-color: #136F63; /* Set your desired line color */
-    top: 50%;
-    transform: translateY(-50%);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-title h2 {
+  position: relative;
+  display: inline-block;
+  font-size: 28px;
+  font-weight: bold;
+  color: #136f63; /* Set your desired text color */
+}
+
+.section-title h2::before,
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  height: 2px; /* Adjust the height of the line */
+  width: 200px; /* Adjust the width of the line */
+  background-color: #136f63; /* Set your desired line color */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 450px) {
+  .section-title h2::before {
+    left: -250px !important; /* Adjust the distance of the line from the text */
   }
 
-  @media (max-width: 450px){
-    .section-title h2::before {
-      left: -250px !important; /* Adjust the distance of the line from the text */
-    }
-    
-    .section-title h2::after {
-      right: -250px !important; /* Adjust the distance of the line from the text */
-    }
-    
-  }
-  
-  .section-title h2::before {
-    left: -325px; /* Adjust the distance of the line from the text */
-  }
-  
   .section-title h2::after {
-    right: -325px; /* Adjust the distance of the line from the text */
+    right: -250px !important; /* Adjust the distance of the line from the text */
   }
-  
-  .section-title p {
-    max-width: 600px; /* Adjust the maximum width of the paragraph */
-    margin: 15px auto; /* Adjust the margin for better spacing */
-    color: #666; /* Set your desired paragraph text color */
-  }
-  
+}
+
+.section-title h2::before {
+  left: -325px; /* Adjust the distance of the line from the text */
+}
+
+.section-title h2::after {
+  right: -325px; /* Adjust the distance of the line from the text */
+}
+
+.section-title p {
+  max-width: 600px; /* Adjust the maximum width of the paragraph */
+  margin: 15px auto; /* Adjust the margin for better spacing */
+  color: #666; /* Set your desired paragraph text color */
+}
 
 /*--------------------------------------------------------------
 # Animated Shapes
 --------------------------------------------------------------*/
 
-  @keyframes slide {
-    0% { transform: translateX(-100%); }
-    50% { transform: translateX(50%) translateY(-50px) rotate(45deg); }
-    100% { transform: translateX(100%) translateY(0) rotate(0deg); }
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(50%) translateY(-50px) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) translateY(0) rotate(0deg);
+  }
+}
+
+@keyframes jump {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translate(60px, 0px);
+  }
+  50% {
+    transform: translate(0px, -60px);
+  }
+}
+
+@keyframes square-anim {
+  0% {
+    filter: blur(0px);
+    outline: none;
   }
 
-  @keyframes jump {
-    0%, 20%, 50%, 80%, 100% { transform: translateY(0);  }
-    40% { transform: translateY(-30px);   }
-    60% { transform: translateY(-15px);   }
-  }
-
-  @keyframes rotate {
-    0% { transform: rotate(0deg); }
-    50% { transform: rotate(180deg);}
-    100% { transform: rotate(360deg); }
-  }
-
-  @keyframes moveUpDown {
-    0%, 100% {
-      transform: translate(60px, 0px) ;
-      
-    }
-    50% {
-      transform: translate(0px, -60px) ;
-      
-    }
-  }
-
-  @keyframes square-anim {
-    0% {
-      filter: blur(0px);
-      outline: none;
-    }
-  
-    25% {
-      filter: blur(5px);
-      outline: 1px solid #000;
-    }
-  
-    50% {
-      filter: blur(10px);
-      outline: 2px solid #000;
-    }
-  
-    75% {
-      filter: blur(15px);
-      outline: 3px solid #000;
-    }
-  
-    100% {
-      filter: blur(20px);
-      outline: 4px solid #000;
-    }
-  }
-
-  @keyframes slight-moveUpDown {
-    0%, 100% {
-        transform: translateY(0px);
-       
-    }
-    
-    50% {
-        transform: translateY(-5px);
-       
-    }
-  }
-
-  .square {
-    width: 300px;
-    height: 300px;
-    top: -10px;
-    background-color: #0563bb2d;
-    
-    filter: blur(25px);
-    position: absolute;
-    rotate: 45deg;
-    animation: rotate 15s infinite;
-  }
-
-  .square1 {
-    width: 500px;
-    height: 500px;
-    top: 0;
-    right: 150px;
-    border-style: solid;
-    border: 2px 2px 2px 2px;
-    border-color: #0563bb2d;
+  25% {
     filter: blur(5px);
-    position: absolute;
-    rotate: 45deg;
-    animation: rotate 15s infinite ;
+    outline: 1px solid #000;
   }
 
-  .square2 {
-    background-color: #136F63;
-    position: relative;
-    top: 400px;
-    right: 50px;
-    width: 50px;
-    height: 50px;
-    z-index: -1px;
-    overflow: hidden;
-    rotate: 45deg;
-    animation: rotate 15s infinite;
+  50% {
+    filter: blur(10px);
+    outline: 2px solid #000;
   }
 
-  .square3 {
-    background-color: #22aaa1;
-    position: absolute;
-    top: 70%;
-    right: 150px;
-    width: 100px;
-    height: 100px;
-    z-index: -1px;
-    overflow: hidden;
-    rotate: 45deg;
-    animation: moveUpDown 15s infinite;
+  75% {
+    filter: blur(15px);
+    outline: 3px solid #000;
   }
 
-  .square3 img {
-    rotate: -45deg;
+  100% {
+    filter: blur(20px);
+    outline: 4px solid #000;
   }
-  
-  .square4 {
-    background-color: #136F6363;
-    position: absolute;
-    top: 83%;
-    right: 100px;
-    width: 50px;
-    height: 50px;
-    z-index: -1px;
-    overflow: hidden;
-    rotate: 45deg;
-    animation: moveUpDown 15s infinite;
+}
+
+@keyframes slight-moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0px);
   }
 
-  .square5 {
-    background-color: #136f6363;
-    position: absolute;
-    top: 83%;
-    right: 250px;
-    width: 50px;
-    height: 50px;
-    z-index: -1px;
-    overflow: hidden;
-    rotate: 45deg;
-    animation: moveUpDown 15s infinite;
+  50% {
+    transform: translateY(-5px);
   }
+}
 
-  .square6 {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: #136f63;
-    animation: square-anim 5s linear infinite alternate;
-  }
+.square {
+  width: 300px;
+  height: 300px;
+  top: -10px;
+  background-color: #0563bb2d;
 
-  @keyframes moveSquare {
-    to {
-      transform: translateX(calc(100vw - 50px));
-    }
+  filter: blur(25px);
+  position: absolute;
+  rotate: 45deg;
+  animation: rotate 15s infinite;
+}
+
+.square1 {
+  width: 500px;
+  height: 500px;
+  top: 0;
+  right: 150px;
+  border-style: solid;
+  border: 2px 2px 2px 2px;
+  border-color: #0563bb2d;
+  filter: blur(5px);
+  position: absolute;
+  rotate: 45deg;
+  animation: rotate 15s infinite;
+}
+
+.square2 {
+  background-color: rgba(19, 111, 99, 0.2);
+  position: relative;
+  top: 400px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  z-index: -1px;
+  overflow: hidden;
+  rotate: 45deg;
+  animation: rotate 15s infinite;
+  backdrop-filter: blur(10px); /* Adds the glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Optional: Light border for better glass look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Shadow for depth */
+}
+
+.square3 {
+  background-color: #22aaa1;
+  position: absolute;
+  top: 70%;
+  right: 150px;
+  width: 100px;
+  height: 100px;
+  z-index: -1px;
+  overflow: hidden;
+  rotate: 45deg;
+  animation: moveUpDown 15s infinite;
+}
+
+.square3 img {
+  rotate: -45deg;
+}
+
+.square4 {
+  background-color: rgba(19, 111, 99, 0.2);
+  position: absolute;
+  top: 83%;
+  right: 100px;
+  width: 50px;
+  height: 50px;
+  z-index: -1px;
+  overflow: hidden;
+  rotate: 45deg;
+  animation: moveUpDown 15s infinite;
+  backdrop-filter: blur(5px); /* Glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Optional: border for glass effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: shadow for depth */
+}
+
+.square5 {
+  background-color: rgba(19, 111, 99, 0.2);
+  position: absolute;
+  top: 83%;
+  right: 250px;
+  width: 50px;
+  height: 50px;
+  z-index: -1px;
+  overflow: hidden;
+  rotate: 45deg;
+  animation: moveUpDown 15s infinite;
+  backdrop-filter: blur(5px); /* Glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Optional: border for glass effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: shadow for depth */
+}
+
+.square6 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #136f63;
+  animation: square-anim 5s linear infinite alternate;
+}
+
+@keyframes moveSquare {
+  to {
+    transform: translateX(calc(100vw - 50px));
   }
+}
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
 .about {
-    
-    background-color: #ffffff;
-    color: #136F63;
-    overflow: hidden;
-    
+  background-color: #ffffff;
+  color: #136f63;
+  overflow: hidden;
 }
 
 #profile-transparent:hover {
-    animation: slight-moveUpDown 2s ;
+  animation: slight-moveUpDown 2s;
 }
 
 /*--------------------------------------------------------------
@@ -255,93 +278,91 @@
 --------------------------------------------------------------*/
 
 #preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #ffffff00; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#preloader:before {
+  content: "";
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  border: 4px solid #136f63;
+
+  animation: animate-preloader 1s linear infinite;
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  #preloader:before {
-    content: '';
-    box-sizing: border-box;
-    width: 50px;
-    height: 50px;
-    border: 4px solid #136F63; 
-    
-    animation: animate-preloader 1s linear infinite;
+  100% {
+    transform: rotate(360deg);
   }
-  
-  @keyframes animate-preloader {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
+}
 
 /*--------------------------------------------------------------
 # Category-Tag Section
 --------------------------------------------------------------*/
-  .category-tag {
-    background-color: #f5f5f5;
-    color: #45505b;
-    float: left;
-    margin: 5px;
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-size: 10px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
+.category-tag {
+  background-color: #f5f5f5;
+  color: #45505b;
+  float: left;
+  margin: 5px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 .category-tag:hover {
-    animation: slight-moveUpDown .75s;
+  animation: slight-moveUpDown 0.75s;
 }
-  
 
 /*--------------------------------------------------------------
 # Facts & CountBox
 --------------------------------------------------------------*/
 
 .facts .count-box {
-    background-color: #eeeeee !important;
-    border-radius: 15px !important;
+  background-color: #eeeeee !important;
+  border-radius: 15px !important;
 }
 
-.facts .count-box i{
-    position: relative !important;
-    width: 0 !important;
-    height: 0 !important;
-    color: #0563bb !important;
-    top: 0 !important;
-    left: 0 !important;
-    font-size: 30px;
+.facts .count-box i {
+  position: relative !important;
+  width: 0 !important;
+  height: 0 !important;
+  color: #0563bb !important;
+  top: 0 !important;
+  left: 0 !important;
+  font-size: 30px;
 }
 
 .facts .count-box p {
-    font-size: 16px;
-    font-weight: bold;
+  font-size: 16px;
+  font-weight: bold;
 }
-
 
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 
 #header1 {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    padding:15px;
-    overflow-y: auto;
-    z-index: 9997;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  overflow-y: auto;
+  z-index: 9997;
 }
 
 /*--------------------------------------------------------------
@@ -352,38 +373,36 @@
 */
 
 .nav-menu1 {
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .nav-menu1 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.nav-menu1>ul>li {
-    float: left;
-    position: relative;
-    white-space: nowrap;
-    margin-right: 8px;
+.nav-menu1 > ul > li {
+  float: left;
+  position: relative;
+  white-space: nowrap;
+  margin-right: 8px;
 }
 
 .nav-menu1 a,
 .nav-menu1 a:focus {
   display: flex;
   align-items: center;
-  color: #136F63;
+  color: #136f63;
   padding: 10px 18px;
   transition: 0.3s;
   font-size: 15px;
   background: #e0e0e0;
-  border-bottom: 5px solid #136F63;
+  border-bottom: 5px solid #136f63;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   height: 56px;
@@ -394,49 +413,47 @@
 
 @media (max-width: 425px) {
   .nav-menu1 a,
-.nav-menu1 a:focus {
-  padding: 5px 10px
-}
+  .nav-menu1 a:focus {
+    padding: 5px 10px;
+  }
 }
 
 .nav-menu1 a i,
 .nav-menu1 a:focus i {
-    font-size: 20px;
-    position: relative;
-    align-self: center;
-    
+  font-size: 20px;
+  position: relative;
+  align-self: center;
 }
 
 .nav-menu1 a span,
 .nav-menu1 a:focus span {
-    padding: 0 5px 0 7px;
-    color: #45505b;
+  padding: 0 5px 0 7px;
+  color: #45505b;
 }
 
 .nav-menu1 a:hover,
 .nav-menu1 .active,
 .nav-menu1 .active:focus,
-.nav-menu1 li:hover>a {
+.nav-menu1 li:hover > a {
   color: #fff;
-  background: #136F63;
-
+  background: #136f63;
 }
 
 .nav-menu1 a:hover span,
 .nav-menu1 .active span,
 .nav-menu1 .active:focus span,
-.nav-menu1 li:hover>a span {
+.nav-menu1 li:hover > a span {
   color: #fff;
 }
 
 .nav-menu1 a:hover,
-.nav-menu1 li:hover>a {
+.nav-menu1 li:hover > a {
   width: 100%;
   color: #fff;
 }
 
 .nav-menu1 a:hover span,
-.nav-menu1 li:hover>a span {
+.nav-menu1 li:hover > a span {
   display: block;
 }
 
