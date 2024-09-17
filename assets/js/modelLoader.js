@@ -61,15 +61,29 @@ function loadModel(objToRender) {
   // Set how far the camera will be from the 3D model
   if (objToRender == "house") {
     camera.position.z = 4.5;
-  } else if (objToRender == "fishinghook" || objToRender == "tv") {
+  } else if (
+    objToRender == "fishinghook" ||
+    objToRender == "tv" ||
+    objToRender == "sword"
+  ) {
     camera.position.x = 1;
   } else if (objToRender == "puddle") {
     camera.position.z = 5.5;
   } else if (objToRender == "mousepad") {
     camera.position.z = 0.75;
     camera.position.y = 0.5;
+  } else if (objToRender == "cup") {
+    camera.position.x = 0.25;
+  } else if (objToRender == "candycane") {
+    camera.position.x = 0.45;
+  } else if (objToRender == "bottleofhoney") {
+    camera.position.x = 0.15;
+    camera.position.y = 0.15;
+  } else if (objToRender == "shawl") {
+    camera.position.z = 3;
   } else {
     camera.position.y = 0.3;
+    camera.position.x = 0.3;
   }
 
   // Add lights to the scene, so we can actually see the 3D Model
