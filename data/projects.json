@@ -607,6 +607,153 @@
       },
       "hasCustomContainer": true,
       "containerType": "3d-model"
+    },
+    {
+      "id": "p033",
+      "slug": "rollofducttape",
+      "name": "Day 15 - Roll of Duct Tape",
+      "category": "3D Model",
+      "projectDate": "September 8, 2024",
+      "toolsUsed": "Blender",
+      "relatedEvent": "30-Day Blender Challenge (August 25 - Sept 25, 2024)",
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model"
+    },
+    {
+      "id": "p034",
+      "slug": "candybar",
+      "name": "Day 16 - Candy Bar | Hersheys",
+      "category": "3D Model",
+      "projectDate": "September 9, 2024",
+      "toolsUsed": "Blender",
+      "relatedEvent": "30-Day Blender Challenge (August 25 - Sept 23, 2024)",
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model"
+    },
+    {
+      "id": "p035",
+      "slug": "handheldgamesystem",
+      "name": "Day 17 - Handheld Game System | ASUS ROG Phone 8 Pro",
+      "category": "3D Model",
+      "projectDate": "September 10, 2024",
+      "toolsUsed": "Blender",
+      "relatedEvent": "30-Day Blender Challenge (August 25 - Sept 23, 2024)",
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model"
+    },
+    {
+      "id": "p036",
+      "slug": "gamecartridge",
+      "name": "Day 18 - Game Cartridge",
+      "category": "3D Model",
+      "projectDate": "September 11, 2024",
+      "toolsUsed": "Blender",
+      "relatedEvent": "30-Day Blender Challenge (August 25 - Sept 23, 2024)",
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model"
+    },
+    {
+      "id": "p037",
+      "slug": "handmirror",
+      "name": "Day 19 - Hand Mirror",
+      "category": "3D Model",
+      "projectDate": "September 12, 2024",
+      "toolsUsed": "Blender",
+      "relatedEvent": "30-Day Blender Challenge (August 25 - Sept 23, 2024)",
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model"
+    },
+    {
+      "id": "p038",
+      "slug": "lampshade",
+      "name": "Day 20 - Lamp Shade",
+      "category": "3D Model",
+      "projectDate": "September 13, 2024",
+      "toolsUsed": "Blender",
+      "relatedEvent": "30-Day Blender Challenge (August 25 - Sept 23, 2024)",
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model"
+    },
+    {
+      "id": "p039",
+      "slug": "toyboat",
+      "name": "Day 21 - Toy Boat",
+      "category": "3D Model",
+      "projectDate": "September 14, 2024",
+      "toolsUsed": "Blender",
+      "relatedEvent": "30-Day Blender Challenge (August 25 - Sept 23, 2024)",
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model"
+    },
+    {
+      "id": "p040",
+      "slug": "speaker",
+      "name": "Day 22 - Speaker",
+      "category": "3D Model",
+      "projectDate": "September 15, 2024",
+      "toolsUsed": "Blender",
+      "relatedEvent": "30-Day Blender Challenge (August 25 - Sept 23, 2024)",
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model"
+    },
+    {
+      "id": "p041",
+      "slug": "stuter",
+      "category": "Web Development",
+      "projectDate": "March 2019",
+      "toolsUsed": "Wix | Website Builder, Adobe Photoshop",
+      "description": "School Project | Study Eater, a simple website for local news, it aims to create literary works that raise awareness about societal phenomena",
+      "projectUrl": "https://selwynrollorata14.wixsite.com/studyeater2019",
+      "images": [
+        {
+          "src": "assets/img/portfolio/website/stuter.png",
+          "caption": "Screenshot 1"
+        },
+        {
+          "src": "assets/img/portfolio/website/stuter1.png",
+          "caption": "Screenshot 2"
+        }
+      ]
     }
   ]
 }
