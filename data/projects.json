@@ -1,0 +1,115 @@
+{
+  "categories": {
+    "tshirt": [
+      {
+        "id": 0,
+        "category": "tshirt",
+        "client": "Personal Project",
+        "project_date": "2023-09-01",
+        "tools": ["Photoshop", ""],
+        "challenges": "none",
+        "solution": "none",
+        "images_path": {
+          "variation": [
+            {
+              "no": 1,
+              "path": "assets/img/portfolio/tshirt/CSU_Warriors_WhiteShirt.jpg"
+            },
+            {
+              "no": 2,
+              "path": "assets/img/portfolio/tshirt/CSU_Warriors_Blck.jpg"
+            },
+            {
+              "no": 3,
+              "path": "assets/img/portfolio/tshirt/CSU_Warriors_Red.jpg"
+            }
+          ],
+          "references": ["none"]
+        }
+      }
+    ],
+    "card": [
+      {
+        "id": 0,
+        "category": "card",
+        "client": "Client B",
+        "project_date": "2023-08-15",
+        "tools": ["Canva", "CorelDRAW"],
+        "challenges": "Design alignment issues",
+        "solution": "Manual adjustments",
+        "images_path": ["path/to/card_image.jpg"]
+      }
+    ],
+    "cover": [
+      {
+        "id": 1,
+        "category": "cover",
+        "client": "Personal Project",
+        "project_date": "2021-04-01",
+        "tools": ["Adobe Photoshop", ""],
+        "challenges": "none",
+        "solution": "none",
+        "images_path": {
+          "variation": [
+            {
+              "no": 1,
+              "path": "assets/img/portfolio/cover/akashiplays_Cover.gif"
+            },
+            {
+              "no": 2,
+              "path": "assets/img/portfolio/cover/akashiYT.png"
+            }
+          ],
+          "references": ["none"]
+        }
+      },
+      {
+        "id": 2,
+        "category": "cover",
+        "client": "Personal Project",
+        "project_date": ["2021-05-01", "2021-05-05"],
+        "tools": ["Adobe Photoshop", ""],
+        "challenges": "none",
+        "solution": "none",
+        "images_path": ["assets/img/portfolio/cover/coverLNHS webinar.jpg", ""]
+      }
+    ],
+    "3d": [
+      {
+        "id": 0,
+        "name": "3D Model A",
+        "description": "This is a 3D model for a building.",
+        "category": "3d",
+        "date": "2023-06-05",
+        "related_event": "Architectural Expo 2023",
+        "image_path": "path/to/3d_image.jpg",
+        "model_path": "path/to/3d_model.obj",
+        "tools": ["Blender", "Maya"]
+      }
+    ],
+    "lanyard": [
+      {
+        "id": 5,
+        "category": "lanyard",
+        "client": "Client D",
+        "project_date": "2023-05-20",
+        "tools": ["Photoshop"],
+        "challenges": "Ensuring durability",
+        "solution": "Using high-quality materials",
+        "images_path": ["path/to/lanyard_image.jpg"]
+      }
+    ],
+    "web": [
+      {
+        "id": 6,
+        "name": "Website A",
+        "category": "web",
+        "project_date": "2023-04-15",
+        "tools": ["HTML", "CSS", "JavaScript"],
+        "challenges": "Cross-browser compatibility",
+        "solution": "Using polyfills and testing",
+        "images_path": ["path/to/web_image.jpg"]
+      }
+    ]
+  }
+}
