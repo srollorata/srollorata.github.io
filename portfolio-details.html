@@ -52,33 +52,11 @@
       <!-- ======= Portfolio Details Section ======= -->
       <section id="portfolio-details" class="portfolio-details">
         <div class="container">
-          <div class="row gy-4">
-            <div class="col-lg-12">
+          <div id="temporary" class="row gy-4">
+            <div id="project-info" class="col-lg-12">
               <div class="portfolio-info">
                 <h3>Project information</h3>
-                <ul>
-                  <li><strong>Category</strong>: Web design</li>
-                  <li><strong>Client</strong>: ASU Company</li>
-                  <li><strong>Project date</strong>: 01 March, 2020</li>
-                  <li><strong>Tools Used</strong>: Figma, VS-Code</li>
-                  <li><strong>Challenges</strong>: None</li>
-                  <li><strong>Solution</strong>: Figma, VS-Code</li>
-                  <li>
-                    <strong>Project URL</strong>:
-                    <a href="#">www.example.com</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="portfolio-description">
-                <h2>This is an example of portfolio detail</h2>
-                <p>
-                  Autem ipsum nam porro corporis rerum. Quis eos dolorem eos
-                  itaque inventore commodi labore quia quia. Exercitationem
-                  repudiandae officiis neque suscipit non officia eaque itaque
-                  enim. Voluptatem officia accusantium nesciunt est omnis
-                  tempora consectetur dignissimos. Sequi nulla at esse enim cum
-                  deserunt eius.
-                </p>
+                <ul></ul>
               </div>
             </div>
 
@@ -119,6 +97,7 @@
               </div>
             </div>
           </div>
+          <div id="model-container" class="col-lg-12"></div>
         </div>
       </section>
       <!-- End Portfolio Details Section -->
@@ -145,5 +124,17 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.167.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.167.0/examples/jsm/"
+        }
+      }
+    </script>
+
+    <script type="module" src="assets/js/modelLoader.js"></script>
+    <script type="module" src="assets/js/projects.js"></script>
   </body>
 </html>

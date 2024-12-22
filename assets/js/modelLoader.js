@@ -19,13 +19,50 @@ let object;
 // OrbitControls allow the camera to move around the scene
 let controls;
 
-document.addEventListener("DOMContentLoaded", function () {
-  const pageID = document.body.id;
+document.addEventListener("DOMContentLoaded", async function () {
+  try {
+    // Get project slug from URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const projectSlug = urlParams.get("project");
 
-  loadModel(pageID);
+    if (!projectSlug) {
+      console.error("No project slug specified in URL");
+      return;
+    }
+    // Fetch and load projects data
+    const response = await fetch("/data/projects.json");
+    const data = await response.json();
+
+    // Find the specific project
+    const project = data.projects.find((p) => p.slug === projectSlug);
+
+    if (!project) {
+      console.error("Project not found in data");
+      return;
+    }
+    console.log("Project data loaded:", project);
+    console.log("Project type:", project.containerType);
+    console.log("Project slug:", project.slug);
+    const pageID = project.slug;
+    // Only load model if project has a 3D model
+    if (project.containerType === "3d-model") {
+      loadModel(pageID);
+    }
+  } catch (error) {
+    console.error("Error loading project data:", error);
+  }
 });
 
 function loadModel(objToRender) {
+  // Add error handling for model container
+  const container = document.getElementById("model-container");
+  if (!container) {
+    console.error("Model container not found");
+    return;
+  }
+
+  // Clear any existing content
+  container.innerHTML = "";
   // Initiate a loader for the .gtlf files
   const loader = new GLTFLoader();
 
