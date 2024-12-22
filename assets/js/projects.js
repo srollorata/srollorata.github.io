@@ -51,41 +51,57 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
     // Common project information
     infoHTML += `
-        <li><strong>Category</strong>: ${project.category}</li>
-        ${
-          project.client
-            ? `<li><strong>Client</strong>: ${project.client}</li>`
-            : ""
-        }
-        <li><strong>Project date</strong>: ${project.projectDate}</li>
-        <li><strong>Tools Used</strong>: ${project.toolsUsed}</li>
-        ${
-          project.relatedEvent
-            ? `<li><strong>Related Event</strong>: ${project.relatedEvent}</li>`
-            : ""
-        }
-        ${
-          !project.hasCustomContainer
-            ? `
-          <li><strong>Challenges</strong>: ${project.challenges}</li>
-          <li><strong>Solution</strong>: ${project.solution}</li>
-        `
-            : ""
-        }
-        ${
-          project.socialLinks
-            ? `
-          <li><strong>Links</strong>: 
-            ${
-              project.socialLinks.facebook
-                ? `<a href="${project.socialLinks.facebook}"><i class="bx bxl-facebook-circle"></i></a>`
-                : ""
-            }
-          </li>
-        `
-            : ""
-        }
-      `;
+       <li><strong>Category</strong>: ${project.category}</li>
+       ${
+         project.client
+           ? `<li><strong>Client</strong>: ${project.client}</li>`
+           : ""
+       }
+       <li><strong>Project date</strong>: ${project.projectDate}</li>
+       <li><strong>Tools Used</strong>: ${project.toolsUsed}</li>
+       ${
+         project.relatedEvent
+           ? `<li><strong>Related Event</strong>: ${project.relatedEvent}</li>`
+           : ""
+       }
+       ${
+         project.description
+           ? `<li><strong>Description</strong>: ${project.description}</li>`
+           : ""
+       }
+       ${
+         project.projectUrl
+           ? `<li><strong>Project URL</strong>: <a href="${project.projectUrl}">${project.projectUrl}</a></li>`
+           : ""
+       }
+       ${
+         !project.hasCustomContainer &&
+         project.challenges &&
+         project.challenges !== "None"
+           ? `<li><strong>Challenges</strong>: ${project.challenges}</li>`
+           : ""
+       }
+       ${
+         !project.hasCustomContainer &&
+         project.solution &&
+         project.solution !== "None"
+           ? `<li><strong>Solution</strong>: ${project.solution}</li>`
+           : ""
+       }
+       ${
+         project.socialLinks
+           ? `
+         <li><strong>Links</strong>: 
+           ${
+             project.socialLinks.facebook
+               ? `<a href="${project.socialLinks.facebook}"><i class="bx bxl-facebook-circle"></i></a>`
+               : ""
+           }
+         </li>
+       `
+           : ""
+       }
+     `;
     infoList.innerHTML = infoHTML;
     // Handle different container types
     if (project.hasCustomContainer && project.containerType === "3d-model") {
