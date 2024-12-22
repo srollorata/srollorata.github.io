@@ -1,0 +1,759 @@
+{
+  "projects": [
+    {
+      "id": "p001",
+      "slug": "aces-faculty-tshirt",
+      "category": "Faculty T-Shirt",
+      "client": "Ampayon Central Elementary School",
+      "projectDate": "May 2023",
+      "toolsUsed": "Adobe Photoshop",
+      "challenges": "None",
+      "solution": "None",
+      "images": [
+        {
+          "src": "assets/img/portfolio/tshirt/1.jpg",
+          "caption": "Variation 1"
+        },
+        {
+          "src": "assets/img/portfolio/tshirt/2.jpg",
+          "caption": "Variation 2"
+        },
+        {
+          "src": "assets/img/portfolio/tshirt/3.jpg",
+          "caption": "Variation 3"
+        },
+        {
+          "src": "assets/img/portfolio/tshirt/4.jpg",
+          "caption": "Variation 4"
+        }
+      ]
+    },
+    {
+      "id": "p002",
+      "slug": "akashiplays",
+      "category": "Cover / Youtube",
+      "client": "Akashi Plays",
+      "projectDate": "April 2021",
+      "toolsUsed": "Adobe Photoshop",
+      "challenges": "None",
+      "solution": "None",
+      "socialLinks": {
+        "facebook": "https://web.facebook.com/akashiplays27official"
+      },
+      "images": [
+        {
+          "src": "assets/img/portfolio/cover/akashiYT.png",
+          "caption": "Variation 1"
+        },
+        {
+          "src": "assets/img/portfolio/cover/akashiplays_Cover.gif",
+          "caption": "Variation 2"
+        }
+      ]
+    },
+    {
+      "id": "p003",
+      "slug": "basages-festivaloftalents",
+      "category": "T-Shirt",
+      "client": "",
+      "projectDate": "November 13, 2023",
+      "toolsUsed": "Canva, Photoshop",
+      "challenges": "None",
+      "solution": "None",
+      "images": [
+        {
+          "src": "assets/img/portfolio/tshirt/festivaloftalents_frontshirt_hd.jpg",
+          "caption": "Front"
+        }
+      ]
+    },
+    {
+      "id": "p004",
+      "slug": "cciswarriors",
+      "category": "TShirt Design",
+      "client": "Personal Project / Competition",
+      "projectDate": "September 10 - 14, 2019",
+      "toolsUsed": "Adobe Photoshop",
+      "challenges": "None",
+      "solution": "None",
+      "images": [
+        {
+          "src": "assets/img/portfolio/tshirt/CSU_Warriors_WhiteShirt.jpg",
+          "caption": "Variation 1: White Shirt"
+        },
+        {
+          "src": "assets/img/portfolio/tshirt/CSU_Warriors_Blck.jpg",
+          "caption": "Variation 2: Black Shirt"
+        },
+        {
+          "src": "assets/img/portfolio/tshirt/CSU_Warriors_Red.jpg",
+          "caption": "Variation 3: Red Shirt"
+        }
+      ]
+    },
+    {
+      "id": "p005",
+      "slug": "rug",
+      "name": "Day 1 - Rug",
+      "category": "3D Model",
+      "projectDate": "August 25 2024",
+      "toolsUsed": "Blender",
+      "relatedEvent": "30-Day Blender Challenge (August 25 - Sept 25, 2024)",
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model"
+    },
+    {
+      "id": "p006",
+      "slug": "fishinghook",
+      "name": "Day 2 - Fishing Hook",
+      "category": "3D Model",
+      "projectDate": "August 26 2024",
+      "toolsUsed": "Blender",
+      "relatedEvent": "30-Day Blender Challenge (August 25 - Sept 25, 2024)",
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model"
+    },
+    {
+      "id": "p007",
+      "slug": "tv",
+      "name": "Day 3 - TV",
+      "category": "3D Model",
+      "projectDate": "August 27 2024",
+      "toolsUsed": "Blender",
+      "relatedEvent": "30-Day Blender Challenge (August 25 - Sept 25, 2024)",
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model"
+    },
+    {
+      "id": "p008",
+      "slug": "creditcard",
+      "name": "Day 4 - Credit Card",
+      "category": "3D Model",
+      "projectDate": "August 28, 2024",
+      "toolsUsed": "Blender",
+      "relatedEvent": "30-Day Blender Challenge (August 25 - Sept 25, 2024)",
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model"
+    },
+    {
+      "id": "p009",
+      "slug": "puddle",
+      "name": "Day 5 - Puddle",
+      "category": "3D Model",
+      "projectDate": "August 29, 2024",
+      "toolsUsed": "Blender",
+      "relatedEvent": "30-Day Blender Challenge (August 25 - Sept 25, 2024)",
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model"
+    },
+    {
+      "id": "p010",
+      "slug": "mousepad",
+      "name": "Day 6 - Mouse Pad",
+      "category": "3D Model",
+      "projectDate": "August 30, 2024",
+      "toolsUsed": "Blender",
+      "relatedEvent": "30-Day Blender Challenge (August 25 - Sept 25, 2024)",
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model"
+    },
+    {
+      "id": "p011",
+      "slug": "cup",
+      "name": "Day 7 - Cup",
+      "category": "3D Model",
+      "projectDate": "August 31, 2024",
+      "toolsUsed": "Blender",
+      "relatedEvent": "30-Day Blender Challenge (August 25 - Sept 25, 2024)",
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model"
+    },
+    {
+      "id": "p012",
+      "slug": "candycane",
+      "name": "Day 8 - Candy Cane",
+      "category": "3D Model",
+      "projectDate": "September 1, 2024",
+      "toolsUsed": "Blender",
+      "relatedEvent": "30-Day Blender Challenge (August 25 - Sept 25, 2024)",
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model"
+    },
+    {
+      "id": "p013",
+      "slug": "emptyjar",
+      "name": "Day 9 - Empty Jar",
+      "category": "3D Model",
+      "projectDate": "September 2, 2024",
+      "toolsUsed": "Blender",
+      "relatedEvent": "30-Day Blender Challenge (August 25 - Sept 25, 2024)",
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model"
+    },
+    {
+      "id": "p014",
+      "slug": "peppershaker",
+      "name": "Day 10 - Pepper Shaker",
+      "category": "3D Model",
+      "projectDate": "September 3, 2024",
+      "toolsUsed": "Blender",
+      "relatedEvent": "30-Day Blender Challenge (August 25 - Sept 25, 2024)",
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model"
+    },
+    {
+      "id": "p015",
+      "slug": "jarofpeanutbutter",
+      "name": "Day 11 - Jar of Peanut Butter",
+      "category": "3D Model",
+      "projectDate": "September 4, 2024",
+      "toolsUsed": "Blender",
+      "relatedEvent": "30-Day Blender Challenge (August 25 - Sept 25, 2024)",
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model"
+    },
+    {
+      "id": "p016",
+      "slug": "bottleofhoney",
+      "name": "Day 12 - Bottle of Honey",
+      "category": "3D Model",
+      "projectDate": "September 5, 2024",
+      "toolsUsed": "Blender",
+      "relatedEvent": "30-Day Blender Challenge (August 25 - Sept 25, 2024)",
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model"
+    },
+    {
+      "id": "p017",
+      "slug": "shawl",
+      "name": "Day 13 - Shawl",
+      "category": "3D Model",
+      "projectDate": "September 6, 2024",
+      "toolsUsed": "Blender",
+      "relatedEvent": "30-Day Blender Challenge (August 25 - Sept 25, 2024)",
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model"
+    },
+    {
+      "id": "p018",
+      "slug": "sword",
+      "name": "Day 14 - Ang Panday 2018, Flavio's Sword",
+      "category": "3D Model",
+      "projectDate": "September 7, 2024",
+      "toolsUsed": "Blender",
+      "relatedEvent": "30-Day Blender Challenge (August 25 - Sept 25, 2024)",
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model"
+    },
+    {
+      "id": "p019",
+      "slug": "donut",
+      "name": "A Donut in a Plate",
+      "category": "3D Model",
+      "projectDate": "August 2024",
+      "toolsUsed": "Blender",
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model"
+    },
+    {
+      "id": "p020",
+      "slug": "erigbuagaslawoffice-id",
+      "category": "Identity Card",
+      "client": "Erigbuagas-Burdeos Law Office",
+      "projectDate": "May 20 - 30, 2023",
+      "toolsUsed": "Adobe Photoshop",
+      "challenges": "None",
+      "solution": "None",
+      "images": [
+        {
+          "src": "assets/img/portfolio/cards/ID Card (Front).jpg",
+          "caption": "Front ID"
+        },
+        {
+          "src": "assets/img/portfolio/cards/ID Card (Back).jpg",
+          "caption": "Back ID"
+        }
+      ]
+    },
+    {
+      "id": "p021",
+      "slug": "erigbuagaslawoffice-lanyard",
+      "category": "Lanyard Design",
+      "client": "Erigbuagas-Burdeos Law Office",
+      "projectDate": "May 20 - 30, 2023",
+      "toolsUsed": "Adobe Photoshop",
+      "challenges": "Model of the Lanyard",
+      "solution": "Used a referenced model and recreate the model using Photoshop",
+      "images": [
+        {
+          "src": "assets/img/portfolio/lanyard/erigbuagas-burdeos_lanyard_var1.jpg",
+          "caption": "Lanyard 1"
+        },
+        {
+          "src": "assets/img/portfolio/lanyard/erigbuagas-burdeos_lanyard_var2.jpg",
+          "caption": "Lanyard 2"
+        }
+      ]
+    },
+    {
+      "id": "p022",
+      "slug": "erigbuagaslawoffice",
+      "category": "Business Card",
+      "client": "Erigbuagas-Burdeos Law Office",
+      "projectDate": "February, 2023",
+      "toolsUsed": "Adobe Photoshop",
+      "challenges": "No Soft-Copy for the Logo",
+      "solution": "Recreated the logo from scratch based on the Picture provided by the client. And in order for the logo to be symmetrical, I've started from the left side of the logo then duplicated that part then flips it horizontally",
+      "socialLinks": {
+        "facebook": "https://web.facebook.com/TheLawOfficeOfAttorneyRema"
+      },
+      "images": [
+        {
+          "src": "assets/img/portfolio/cards/front_2.jpg",
+          "caption": "Business Card 2, Front"
+        },
+        {
+          "src": "assets/img/portfolio/cards/back_2.jpg",
+          "caption": "Business Card 2, Back"
+        },
+        {
+          "src": "assets/img/portfolio/cards/business card_withQR_2.jpg",
+          "caption": "Business Card 2, Combined"
+        },
+        {
+          "src": "assets/img/portfolio/cards/front_withQR.jpg",
+          "caption": "Business Card 1, Front"
+        },
+        {
+          "src": "assets/img/portfolio/cards/back.jpg",
+          "caption": "Business Card 1, Back"
+        },
+        {
+          "src": "assets/img/portfolio/cards/business card.jpg",
+          "caption": "Business Card 1, Combined"
+        }
+      ]
+    },
+    {
+      "id": "p023",
+      "slug": "jerometurns21",
+      "category": "Invitational Card",
+      "client": "Jerome Sales",
+      "projectDate": "March, 2021",
+      "toolsUsed": "Photoshop",
+      "challenges": "None",
+      "solution": "None",
+      "images": [
+        {
+          "src": "assets/img/portfolio/cards/jerome_21st_front.jpg",
+          "caption": "Front"
+        },
+        {
+          "src": "assets/img/portfolio/cards/jerome_21st_back.jpg",
+          "caption": "Back"
+        }
+      ]
+    },
+    {
+      "id": "p024",
+      "slug": "losangelesnationalhighschool-cover",
+      "category": "Social Media Cover",
+      "client": "Personal Project",
+      "projectDate": "May 1 - 5, 2021",
+      "toolsUsed": "Adobe Photoshop",
+      "challenges": "None",
+      "solution": "None",
+      "images": [
+        {
+          "src": "assets/img/portfolio/cover/coverLNHS webinar.jpg",
+          "caption": "LANHS Cover"
+        }
+      ]
+    },
+    {
+      "id": "p025",
+      "slug": "sirjobtv-jobertalks",
+      "category": "Cover",
+      "client": "Sir Job TV",
+      "projectDate": "July - August 2024",
+      "toolsUsed": "Canva, Adobe Photoshop, Notion",
+      "challenges": "Redesigned according to client's preferences",
+      "solution": "None",
+      "images": [
+        {
+          "src": "assets/img/portfolio/cover/sirjobtv/r1.jpg",
+          "caption": "Referenced (from Canva, Designed by @rajeshgrover)"
+        },
+        {
+          "src": "assets/img/portfolio/cover/sirjobtv/v1.1.jpg",
+          "caption": "V1, YouTube Banner"
+        },
+        {
+          "src": "assets/img/portfolio/cover/sirjobtv/v1.2.jpg",
+          "caption": "V2, Facebook Cover"
+        }
+      ]
+    },
+    {
+      "id": "p026",
+      "slug": "sirjobtv",
+      "category": "Cover",
+      "client": "Jobert B. Bergosa Jr.",
+      "projectDate": "May 2021",
+      "toolsUsed": "Adobe Photoshop",
+      "challenges": "None",
+      "solution": "None",
+      "socialLinks": {
+        "facebook": "https://web.facebook.com/photo.php?fbid=492975632842187&set=pb.100063892636208.-2207520000&type=3"
+      },
+      "images": [
+        {
+          "src": "assets/img/portfolio/cover/sirjobtv/SirJobTVCover NEW.png",
+          "caption": "Output"
+        }
+      ]
+    },
+    {
+      "id": "p027",
+      "slug": "sup",
+      "category": "T-Shirt",
+      "client": "Personal Project",
+      "projectDate": "September, 2019",
+      "toolsUsed": "Adobe Photoshop",
+      "challenges": "None",
+      "solution": "None",
+      "images": [
+        {
+          "src": "assets/img/portfolio/tshirt/ssup_shirt.jpg",
+          "caption": "SUP Shirt"
+        }
+      ]
+    },
+    {
+      "id": "p028",
+      "slug": "tindahannihamo-bcard",
+      "category": "Business Card",
+      "client": "Cristina C. Mokline",
+      "projectDate": "July 20 - 25, 2023",
+      "toolsUsed": "Adobe Photoshop",
+      "challenges": "First Layout wasn't able to match the Business Type",
+      "solution": "Re-Designed the layout into much more like a store type, and the client provided some raw pictures for additional design.",
+      "images": [
+        {
+          "src": "assets/img/portfolio/cards/green.png",
+          "caption": "Variation 1: Green"
+        },
+        {
+          "src": "assets/img/portfolio/cards/blue.png",
+          "caption": "Variation 2: Blue"
+        },
+        {
+          "src": "assets/img/portfolio/cards/red.png",
+          "caption": "Variation 3: Red"
+        }
+      ]
+    },
+    {
+      "id": "p029",
+      "slug": "tindahannihamo-tarp",
+      "category": "Tarpaulin / Cover",
+      "client": "Cristina C. Mokline",
+      "projectDate": "July 20 - 25, 2023",
+      "toolsUsed": "Adobe Photoshop",
+      "challenges": "None",
+      "solution": "None",
+      "images": [
+        {
+          "src": "assets/img/portfolio/cover/green.png",
+          "caption": "Variation 1: Green"
+        },
+        {
+          "src": "assets/img/portfolio/cover/var1_Blue.png",
+          "caption": "Variation 2: Blue"
+        },
+        {
+          "src": "assets/img/portfolio/cover/var1_Red.png",
+          "caption": "Variation 3: Red"
+        }
+      ]
+    },
+    {
+      "id": "p030",
+      "slug": "tnhs-tamarraws",
+      "category": "T-Shirt Design",
+      "client": "Personal Project",
+      "projectDate": "March 2023",
+      "toolsUsed": "Adobe Photoshop",
+      "challenges": "The Tamarraw and Graphics",
+      "solution": "The T-Shirt model is a template free from the internet. Recreated the whole Tamarraw as I dont have a softcopy, then Managed to gather another graphics from Google and applied the overlay",
+      "images": [
+        {
+          "src": "assets/img/portfolio/tshirt/tnhs tamarraws.jpg",
+          "caption": "Tamarraw T-Shirt"
+        },
+        {
+          "src": "assets/img/portfolio/tshirt/tnhs tamarraws-ref.jpg",
+          "caption": "Tamarraw T-Shirt - Referenced from TNHS"
+        }
+      ]
+    },
+    {
+      "id": "p031",
+      "slug": "tnhs-turnoverceremony",
+      "category": "Program/Invitational Card",
+      "client": "",
+      "projectDate": "May 2023",
+      "toolsUsed": "Adobe Photoshop",
+      "challenges": "None",
+      "solution": "None",
+      "images": [
+        {
+          "src": "assets/img/portfolio/cover/front_cover.jpg",
+          "caption": "Front and Back"
+        },
+        {
+          "src": "assets/img/portfolio/cover/content.jpg",
+          "caption": "Contents"
+        }
+      ]
+    },
+    {
+      "id": "p032",
+      "slug": "trainingbydict-3dmodelingdesign",
+      "name": "House and a Christmas Tree",
+      "category": "3D Model",
+      "projectDate": "September 2021",
+      "toolsUsed": "Blender",
+      "relatedEvent": "ICT Literacy and Competency Development Bureau | 10-Day 3D Modeling Training",
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model"
+    },
+    {
+      "id": "p033",
+      "slug": "rollofducttape",
+      "name": "Day 15 - Roll of Duct Tape",
+      "category": "3D Model",
+      "projectDate": "September 8, 2024",
+      "toolsUsed": "Blender",
+      "relatedEvent": "30-Day Blender Challenge (August 25 - Sept 25, 2024)",
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model"
+    },
+    {
+      "id": "p034",
+      "slug": "candybar",
+      "name": "Day 16 - Candy Bar | Hersheys",
+      "category": "3D Model",
+      "projectDate": "September 9, 2024",
+      "toolsUsed": "Blender",
+      "relatedEvent": "30-Day Blender Challenge (August 25 - Sept 23, 2024)",
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model"
+    },
+    {
+      "id": "p035",
+      "slug": "handheldgamesystem",
+      "name": "Day 17 - Handheld Game System | ASUS ROG Phone 8 Pro",
+      "category": "3D Model",
+      "projectDate": "September 10, 2024",
+      "toolsUsed": "Blender",
+      "relatedEvent": "30-Day Blender Challenge (August 25 - Sept 23, 2024)",
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model"
+    },
+    {
+      "id": "p036",
+      "slug": "gamecartridge",
+      "name": "Day 18 - Game Cartridge",
+      "category": "3D Model",
+      "projectDate": "September 11, 2024",
+      "toolsUsed": "Blender",
+      "relatedEvent": "30-Day Blender Challenge (August 25 - Sept 23, 2024)",
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model"
+    },
+    {
+      "id": "p037",
+      "slug": "handmirror",
+      "name": "Day 19 - Hand Mirror",
+      "category": "3D Model",
+      "projectDate": "September 12, 2024",
+      "toolsUsed": "Blender",
+      "relatedEvent": "30-Day Blender Challenge (August 25 - Sept 23, 2024)",
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model"
+    },
+    {
+      "id": "p038",
+      "slug": "lampshade",
+      "name": "Day 20 - Lamp Shade",
+      "category": "3D Model",
+      "projectDate": "September 13, 2024",
+      "toolsUsed": "Blender",
+      "relatedEvent": "30-Day Blender Challenge (August 25 - Sept 23, 2024)",
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model"
+    },
+    {
+      "id": "p039",
+      "slug": "toyboat",
+      "name": "Day 21 - Toy Boat",
+      "category": "3D Model",
+      "projectDate": "September 14, 2024",
+      "toolsUsed": "Blender",
+      "relatedEvent": "30-Day Blender Challenge (August 25 - Sept 23, 2024)",
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model"
+    },
+    {
+      "id": "p040",
+      "slug": "speaker",
+      "name": "Day 22 - Speaker",
+      "category": "3D Model",
+      "projectDate": "September 15, 2024",
+      "toolsUsed": "Blender",
+      "relatedEvent": "30-Day Blender Challenge (August 25 - Sept 23, 2024)",
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model"
+    },
+    {
+      "id": "p041",
+      "slug": "stuter",
+      "category": "Web Development",
+      "projectDate": "March 2019",
+      "toolsUsed": "Wix | Website Builder, Adobe Photoshop",
+      "description": "School Project | Study Eater, a simple website for local news, it aims to create literary works that raise awareness about societal phenomena",
+      "projectUrl": "https://selwynrollorata14.wixsite.com/studyeater2019",
+      "images": [
+        {
+          "src": "assets/img/portfolio/website/stuter.png",
+          "caption": "Screenshot 1"
+        },
+        {
+          "src": "assets/img/portfolio/website/stuter1.png",
+          "caption": "Screenshot 2"
+        }
+      ]
+    }
+  ]
+}
