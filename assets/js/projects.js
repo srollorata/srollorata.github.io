@@ -91,16 +91,41 @@ document.addEventListener("DOMContentLoaded", async () => {
        ${
          project.socialLinks
            ? `
-         <li><strong>Links</strong>: 
+         <li><strong>Social Links</strong>: 
            ${
              project.socialLinks.facebook
-               ? `<a href="${project.socialLinks.facebook}"><i class="bx bxl-facebook-circle"></i></a>`
+               ? `<a target="_blank" href="${project.socialLinks.facebook}"><i class="bx bxl-facebook-circle"></i></a>`
                : ""
            }
          </li>
        `
            : ""
        }
+        ${
+          project.editingDetails
+            ? `
+         <li><strong>Editing Details</strong>: <br>
+           ${
+             project.editingDetails.colorCorrection
+               ? `<strong>Color Correction</strong>: ${project.editingDetails.colorCorrection}`
+               : ""
+           }<br>
+           
+           ${
+             project.editingDetails.retouching
+               ? `<strong>Retouching</strong>: ${project.editingDetails.retouching}`
+               : ""
+           }<br>
+
+           ${
+             project.editingDetails.effects
+               ? `<strong>Effects</strong>: ${project.editingDetails.effects}`
+               : ""
+           }<br>
+         </li>
+       `
+            : ""
+        }  
      `;
     infoList.innerHTML = infoHTML;
     // Handle different container types
@@ -115,10 +140,10 @@ document.addEventListener("DOMContentLoaded", async () => {
         // Make the Project information container col-lg-12 to col-lg-8
         const projectInfo = document.getElementById("project-info");
         projectInfo.classList.remove("col-lg-12");
-        projectInfo.classList.add("col-lg-8");
+        // projectInfo.classList.add("col-lg-8");
 
         const controlsDiv = document.createElement("div");
-        controlsDiv.className = "col-lg-4";
+        controlsDiv.className = "col-lg-12";
         controlsDiv.innerHTML = `
             <div class="portfolio-info">
               <h3>3D Mouse Controls</h3>
@@ -150,7 +175,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         .map(
           (image) => `
           <div class="swiper-slide">
-            <img src="${image.src}" alt="${image.caption}">
+            <center><img src="${image.src}" alt="${image.caption}" style="height: 100vh; width: auto;  object-fit: cover;"></center>
             <p><center><strong>${image.caption}</strong></center></p>
           </div>
         `
