@@ -471,3 +471,38 @@
 .services .iconbox-pink:hover .category-tag {
   background-color: #ffcee3;
 }
+
+/*-------------------------------------------------------------
+# Image Comparison Slider
+-------------------------------------------------------------*/
+.comparison-container {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.img-comp-container {
+  position: relative;
+  min-height: 100vh; /* Adjust this based on your images */
+}
+
+.img-comp-before,
+.img-comp-after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.img-comp-before {
+  z-index: 1;
+  width: 50%;
+  border-right: 2px solid white;
+}
+
+.img-comp-before img,
+.img-comp-after img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}

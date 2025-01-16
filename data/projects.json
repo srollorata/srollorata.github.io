@@ -754,6 +754,74 @@
           "caption": "Screenshot 2"
         }
       ]
+    },
+    {
+      "id": "p042",
+      "slug": "khim-turns-18",
+      "category": "Photo Editing",
+      "projectDate": "November 2024",
+      "toolsUsed": "Adobe Photoshop, Adobe Lightroom Classic",
+      "description": "Post Process Editing from raw camera (.NEF) to enhancing the overall visuals",
+      "beforeAfter": true,
+      "images": [
+        {
+          "src": "assets/img/portfolio/photos/DSC_0155_before_after.jpg",
+          "caption": "Comparison"
+        },
+        {
+          "src": "assets/img/portfolio/photos/DSC_0155.jpg",
+          "caption": "Final Edit | Variation 1"
+        },
+        {
+          "src": "assets/img/portfolio/photos/DSC_0155_2.jpg",
+          "caption": "Final Edit | Variation 2"
+        },
+        {
+          "src": "assets/img/portfolio/photos/DSC_0155_raw.jpg",
+          "caption": "Before Edit"
+        }
+      ],
+      "editingDetails": {
+        "colorCorrection": "The colors are enhanced, with a warmer and brighter tone. The green in the grass and the blue in the sky are more vivid, giving the image a lively and pleasing appearance",
+        "retouching": "Retouching is evident as the subject's skin and shirt appear smoother and brighter. The overall clarity is improved, through sharpening and noise reduction",
+        "effects": "Effects such as brightness adjustments, slight vignetting, and saturation enhancements have been applied to create a polished look. The light bloom around the subject is more prominent, creating a glowing effect",
+        "composition": "The edited composition will feel more balanced due to the improved lighting and color adjustments. These enhancements guide the viewer's eye more effectively towards the subject while retaining the natural setting"
+      },
+      "socialLinks": {
+        "facebook": "https://www.facebook.com/photo/?fbid=1944768399322613&set=a.120588625073942"
+      }
+    },
+    {
+      "id": "p043",
+      "slug": "khim-tagnote-falls",
+      "category": "Photo Editing",
+      "projectDate": "December 2024",
+      "toolsUsed": "Adobe Photoshop, Adobe Lightroom Classic",
+      "description": "Post Process Editing from raw camera to enhancing visuals and removing unnecessary subjects",
+      "beforeAfter": true,
+      "images": [
+        {
+          "src": "assets/img/portfolio/photos/khim-tagnote-before-after.jpg",
+          "caption": "Comparison"
+        },
+        {
+          "src": "assets/img/portfolio/photos/khim-tagnote-edited.jpg",
+          "caption": "Final Edit"
+        },
+        {
+          "src": "assets/img/portfolio/photos/khim-tagnote-raw.jpg",
+          "caption": "Before Edit"
+        }
+      ],
+      "editingDetails": {
+        "colorCorrection": "",
+        "retouching": "",
+        "effects": "",
+        "composition": ""
+      },
+      "socialLinks": {
+        "facebook": "https://www.facebook.com/photo/?fbid=1985537128579073&set=pcb.1985537641912355"
+      }
     }
   ]
 }
