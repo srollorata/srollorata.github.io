@@ -822,6 +822,21 @@
       "socialLinks": {
         "facebook": "https://www.facebook.com/photo/?fbid=1985537128579073&set=pcb.1985537641912355"
       }
+    },
+    {
+      "id": "p044",
+      "slug": "tambayan",
+      "category": "Web Development",
+      "projectDate": "January 2025",
+      "toolsUsed": "Nextjs, Prisma, PostgreSQL, Uploadthing, Clerk",
+      "description": "Tambayan is a personal social media project created by Selwyn Rollorata with NextJs",
+      "projectUrl": "https://tambayan-nextjs.vercel.app/",
+      "images": [
+        {
+          "src": "assets/img/portfolio/website/tambayan-logo.png",
+          "caption": "Logo"
+        }
+      ]
     }
   ]
 }

@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", async () => {
        }
        ${
          project.projectUrl
-           ? `<li><strong>Project URL</strong>: <a href="${project.projectUrl}">${project.projectUrl}</a></li>`
+           ? `<li><strong>Project URL</strong>: <a href="${project.projectUrl}" target="_blank">${project.projectUrl}</a></li>`
            : ""
        }
        ${
