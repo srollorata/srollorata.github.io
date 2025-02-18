@@ -371,45 +371,6 @@
       ]
     },
     {
-      "id": "p022",
-      "slug": "erigbuagaslawoffice",
-      "category": "Business Card",
-      "client": "Erigbuagas-Burdeos Law Office",
-      "projectDate": "February, 2023",
-      "toolsUsed": "Adobe Photoshop",
-      "challenges": "No Soft-Copy for the Logo",
-      "solution": "Recreated the logo from scratch based on the Picture provided by the client. And in order for the logo to be symmetrical, I've started from the left side of the logo then duplicated that part then flips it horizontally",
-      "socialLinks": {
-        "facebook": "https://web.facebook.com/TheLawOfficeOfAttorneyRema"
-      },
-      "images": [
-        {
-          "src": "assets/img/portfolio/cards/front_2.jpg",
-          "caption": "Business Card 2, Front"
-        },
-        {
-          "src": "assets/img/portfolio/cards/back_2.jpg",
-          "caption": "Business Card 2, Back"
-        },
-        {
-          "src": "assets/img/portfolio/cards/business card_withQR_2.jpg",
-          "caption": "Business Card 2, Combined"
-        },
-        {
-          "src": "assets/img/portfolio/cards/front_withQR.jpg",
-          "caption": "Business Card 1, Front"
-        },
-        {
-          "src": "assets/img/portfolio/cards/back.jpg",
-          "caption": "Business Card 1, Back"
-        },
-        {
-          "src": "assets/img/portfolio/cards/business card.jpg",
-          "caption": "Business Card 1, Combined"
-        }
-      ]
-    },
-    {
       "id": "p023",
       "slug": "jerometurns21",
       "category": "Invitational Card",
@@ -501,30 +462,6 @@
         {
           "src": "assets/img/portfolio/tshirt/ssup_shirt.jpg",
           "caption": "SUP Shirt"
-        }
-      ]
-    },
-    {
-      "id": "p028",
-      "slug": "tindahannihamo-bcard",
-      "category": "Business Card",
-      "client": "Cristina C. Mokline",
-      "projectDate": "July 20 - 25, 2023",
-      "toolsUsed": "Adobe Photoshop",
-      "challenges": "First Layout wasn't able to match the Business Type",
-      "solution": "Re-Designed the layout into much more like a store type, and the client provided some raw pictures for additional design.",
-      "images": [
-        {
-          "src": "assets/img/portfolio/cards/green.png",
-          "caption": "Variation 1: Green"
-        },
-        {
-          "src": "assets/img/portfolio/cards/blue.png",
-          "caption": "Variation 2: Blue"
-        },
-        {
-          "src": "assets/img/portfolio/cards/red.png",
-          "caption": "Variation 3: Red"
         }
       ]
     },
