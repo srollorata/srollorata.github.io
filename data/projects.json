@@ -351,26 +351,6 @@
       ]
     },
     {
-      "id": "p021",
-      "slug": "erigbuagaslawoffice-lanyard",
-      "category": "Lanyard Design",
-      "client": "Erigbuagas-Burdeos Law Office",
-      "projectDate": "May 20 - 30, 2023",
-      "toolsUsed": "Adobe Photoshop",
-      "challenges": "Model of the Lanyard",
-      "solution": "Used a referenced model and recreate the model using Photoshop",
-      "images": [
-        {
-          "src": "assets/img/portfolio/lanyard/erigbuagas-burdeos_lanyard_var1.jpg",
-          "caption": "Lanyard 1"
-        },
-        {
-          "src": "assets/img/portfolio/lanyard/erigbuagas-burdeos_lanyard_var2.jpg",
-          "caption": "Lanyard 2"
-        }
-      ]
-    },
-    {
       "id": "p023",
       "slug": "jerometurns21",
       "category": "Invitational Card",

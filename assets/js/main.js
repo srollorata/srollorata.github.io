@@ -196,7 +196,6 @@
         { id: ".filter-3d", class: "filter-3d" },
         { id: ".filter-card", class: "filter-card" },
         { id: ".filter-cover", class: "filter-cover" },
-        { id: ".filter-lanyard", class: "filter-lanyard" },
         { id: ".filter-photos", class: "filter-photos" },
         { id: ".filter-tshirt", class: "filter-tshirt" },
         { id: ".filter-website", class: "filter-website" },
