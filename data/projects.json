@@ -754,6 +754,76 @@
           "caption": "Logo"
         }
       ]
+    }, 
+    {
+      "id": "p045",
+      "slug": "akashiplays-logo",
+      "category": "Logo",
+      "projectDate": "April - May 2023",
+      "toolsUsed": "Adobe Photoshop",
+      "description": "The logo is Inspired by Google Play, a game and app store for Android devices. The logo features a stylized play button, representing the gaming aspect of the channel",
+      "projectUrl": "https://www.facebook.com/akashiplays27official",
+      "images": [
+        {
+          "src": "assets/img/portfolio/logo/akashiPlays.jpg",
+          "caption": "Logo"
+        }, {
+          "src": "assets/img/portfolio/cover/akashiplays_Cover.gif",
+          "caption": "Cover" 
+        }, {
+          "src": "assets/img/portfolio/cover/akashiYT.png",
+          "caption": "Logo Variation 2"
+        }
+      ]
+    }, {
+      "id": "p046",
+      "slug": "gemida",
+      "category": "Logo",
+      "projectDate": "April - May 2023",
+      "toolsUsed": "Figma, Canva and Adobe Photoshop", 
+      "description": "",
+      "projectUrl": "https://www.facebook.com/akashiplays27official",
+      "images": [
+        {
+          "src": "assets/img/portfolio/logo/Logo9 - Concept and Meaning.jpg",
+          "caption": "Concept and Meaning"
+        }, {
+          "src": "assets/img/portfolio/logo/4 (1).png",
+          "caption": "Logo with Color"
+        }, {
+          "src": "assets/img/portfolio/logo/4 (2).png",
+          "caption": "Logo with Color"
+        }, {
+          "src": "assets/img/portfolio/logo/Logo9.jpg",
+          "caption": "Logo 1st Reunion" 
+        }, {
+          "src": "assets/img/portfolio/logo/5.png",
+          "caption": "Logo 2nd Reunion" 
+        }
+      ]
+    }, {
+      "id": "p047",
+      "slug": "mare-logo",
+      "category": "Logo",
+      "projectDate": "February - May 2025",
+      "toolsUsed": "Figma, and Canva", 
+      "description": "",
+      "projectUrl": "https://www.facebook.com/photo/?fbid=122115983042762743&set=a.122107731542762743",
+      "images": [
+        {
+          "src": "assets/img/portfolio/logo/mare-1.png",
+          "caption": "Light"
+        }, {
+          "src": "assets/img/portfolio/logo/mare-3.png",
+          "caption": "Dark"
+        }, {
+          "src": "assets/img/portfolio/logo/mare-2.png",
+          "caption": "Color Palette"
+        }, {
+          "src": "assets/img/portfolio/logo/mare-comparison.png",
+          "caption": "Comparison from Previous Design"
+        }
+      ]
     }
   ]
 }
