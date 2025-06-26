@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         .map(
           (image) => `
           <div class="swiper-slide">
-            <center><img src="${image.src}" alt="${image.caption}" style="height: 75vh; width: auto; object-fit: cover;" ></center>
+            <center><img src="${image.src}" alt="${image.caption}" style="max-width: 100%; max-height: 60vh; object-fit: contain; display: block; margin: 0 auto;" ></center>
             <p><center><strong>${image.caption}</strong></center></p>
           </div>
         `
