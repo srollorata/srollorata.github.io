@@ -136,7 +136,7 @@ function displayError(title, message, type = "error") {
  * @param {Object} project - Project data object
  */
 function updateProjectInfo(project) {
-  const infoList = document.querySelector(".portfolio-info ul");
+  const infoList = document.getElementById("project-info-list");
   if (!infoList) {
     console.error("Project info list not found");
     return;
@@ -182,41 +182,33 @@ function updateProjectInfo(project) {
  * @param {Object} project - Project data object
  */
 function handle3DModelProject(project) {
-  const container = document.querySelector(".portfolio-details-slider");
-  if (!container) {
-    console.error("Portfolio details slider not found");
-    return;
+  // Hide image container and show model container
+  const imageContainer = document.getElementById("image-container");
+  const modelContainer = document.getElementById("model-container");
+  
+  if (imageContainer) {
+    imageContainer.style.display = "none";
   }
   
-  const modelContainer = document.createElement("div");
-  modelContainer.id = "model-container";
-  container.replaceWith(modelContainer);
+  if (modelContainer) {
+    modelContainer.style.display = "block";
+  }
   
   // Add model controls if they exist
   if (project.modelControls) {
-    const projectInfo = document.getElementById("project-info");
-    if (projectInfo) {
-      projectInfo.classList.remove("col-lg-12");
-    }
-
-    const controlsDiv = document.createElement("div");
-    controlsDiv.className = "col-lg-12";
-    controlsDiv.innerHTML = `
-      <div class="portfolio-info">
-        <h3>3D Mouse Controls</h3>
-        <ul>
-          ${Object.entries(project.modelControls)
-            .map(([key, value]) => 
-              `<li><strong>${key.replace(/([A-Z])/g, " $1").replace(/^./, str => str.toUpperCase())}</strong>: ${value}</li>`
-            )
-            .join("")}
-        </ul>
-      </div>
-    `;
+    const controlsPanel = document.getElementById("controls-panel");
+    const controlsList = document.getElementById("controls-list");
     
-    const row = document.querySelector(".row");
-    if (row) {
-      row.appendChild(controlsDiv);
+    if (controlsPanel && controlsList) {
+      controlsPanel.style.display = "block";
+      
+      let controlsHTML = "";
+      Object.entries(project.modelControls).forEach(([key, value]) => {
+        const formattedKey = key.replace(/([A-Z])/g, " $1").replace(/^./, str => str.toUpperCase());
+        controlsHTML += `<li><strong>${formattedKey}</strong>: ${value}</li>`;
+      });
+      
+      controlsList.innerHTML = controlsHTML;
     }
   }
   
@@ -232,6 +224,18 @@ function handle3DModelProject(project) {
  * @param {Object} project - Project data object
  */
 function handleImageProject(project) {
+  // Hide model container and show image container
+  const modelContainer = document.getElementById("model-container");
+  const imageContainer = document.getElementById("image-container");
+  
+  if (modelContainer) {
+    modelContainer.style.display = "none";
+  }
+  
+  if (imageContainer) {
+    imageContainer.style.display = "flex";
+  }
+  
   const swiperWrapper = document.querySelector(".swiper-wrapper");
   if (!swiperWrapper) {
     console.error("Swiper wrapper not found");
@@ -246,11 +250,9 @@ function handleImageProject(project) {
   swiperWrapper.innerHTML = project.images
     .map(image => `
       <div class="swiper-slide">
-        <center>
-          <img src="${image.src}" alt="${image.caption}" style="max-width: 100%; max-height: 60vh; object-fit: contain; display: block; margin: 0 auto;" 
-               onerror="this.onerror=null; this.src='assets/img/portfolio/portfolio-details-1.jpg'; this.alt='Image not available';">
-        </center>
-        <p><center><strong>${image.caption}</strong></center></p>
+        <img src="${image.src}" alt="${image.caption}" 
+             onerror="this.onerror=null; this.src='assets/img/portfolio/portfolio-details-1.jpg'; this.alt='Image not available';">
+        <p><strong>${image.caption}</strong></p>
       </div>
     `)
     .join("");
@@ -274,3 +276,33 @@ function handleImageProject(project) {
     console.error("Error initializing Swiper:", error);
   }
 }
+
+/**
+ * Toggle panel visibility
+ * @param {string} panelId - ID of the panel to toggle
+ */
+function togglePanel(panelId) {
+  const panel = document.getElementById(panelId);
+  if (panel) {
+    const isExpanded = panel.classList.contains("expanded");
+    
+    if (isExpanded) {
+      panel.classList.remove("expanded");
+      panel.classList.add("collapsed");
+    } else {
+      panel.classList.remove("collapsed");
+      panel.classList.add("expanded");
+    }
+  }
+}
+
+// Initialize panels in collapsed state when page loads
+document.addEventListener("DOMContentLoaded", () => {
+  const panels = document.querySelectorAll(".panel");
+  panels.forEach(panel => {
+    panel.classList.add("collapsed");
+  });
+});
+
+// Make togglePanel function globally available
+window.togglePanel = togglePanel;

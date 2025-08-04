@@ -65,54 +65,52 @@
     <main id="main">
       <!-- ======= Portfolio Details Section ======= -->
       <section id="portfolio-details" class="portfolio-details">
-        <div class="container">
-          <div id="temporary" class="row gy-4">
-            <div id="project-info" class="col-lg-12">
-              <div class="portfolio-info">
-                <h3>Project information</h3>
-                <ul></ul>
+        <!-- Full-screen model/image container -->
+        <div id="fullscreen-container" class="fullscreen-container">
+          <!-- Model container for 3D models -->
+          <div id="model-container" class="model-container"></div>
+          
+          <!-- Image slider container for image projects -->
+          <div id="image-container" class="image-container">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+                <!-- Images will be loaded here by JavaScript -->
               </div>
+              <div class="swiper-pagination"></div>
             </div>
+          </div>
+        </div>
 
-            <div class="col-lg-12">
-              <div class="portfolio-details-slider swiper">
-                <div class="swiper-wrapper align-items-center">
-                  <div class="swiper-slide">
-                    <img
-                      src="assets/img/portfolio/portfolio-details-1.jpg"
-                      alt=""
-                    />
-                    <p>
-                      <center><strong>Back</strong></center>
-                    </p>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <img
-                      src="assets/img/portfolio/portfolio-details-2.jpg"
-                      alt=""
-                    />
-                    <p>
-                      <center><strong>Back</strong></center>
-                    </p>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <img
-                      src="assets/img/portfolio/portfolio-details-3.jpg"
-                      alt=""
-                    />
-                    <p>
-                      <center><strong>Back</strong></center>
-                    </p>
-                  </div>
-                </div>
-                <div class="swiper-pagination"></div>
+        <!-- Floating control panels -->
+        <div class="floating-panels">
+          <!-- Project Information Panel -->
+          <div class="panel project-info-panel" id="project-info-panel">
+            <div class="panel-header" onclick="togglePanel('project-info-panel')">
+              <h3><i class="bi bi-info-circle"></i> Project Information</h3>
+              <i class="bi bi-chevron-down toggle-icon"></i>
+            </div>
+            <div class="panel-content">
+              <div class="portfolio-info">
+                <ul id="project-info-list"></ul>
               </div>
             </div>
           </div>
-          <div id="model-container" class="col-lg-12"></div>
+
+          <!-- 3D Controls Panel -->
+          <div class="panel controls-panel" id="controls-panel" style="display: none;">
+            <div class="panel-header" onclick="togglePanel('controls-panel')">
+              <h3><i class="bi bi-mouse"></i> 3D Mouse Controls</h3>
+              <i class="bi bi-chevron-down toggle-icon"></i>
+            </div>
+            <div class="panel-content">
+              <div class="portfolio-info">
+                <ul id="controls-list"></ul>
+              </div>
+            </div>
+          </div>
         </div>
+
+        
       </section>
       <!-- End Portfolio Details Section -->
     </main>
