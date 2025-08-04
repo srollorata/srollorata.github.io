@@ -13,11 +13,28 @@
    * Easy selector helper function
    */
   const select = (el, all = false) => {
+    // Validate input parameters
+    if (!el || typeof el !== 'string') {
+      console.warn('Invalid selector provided:', el);
+      return all ? [] : null;
+    }
+    
+    // Trim the selector and validate it's not empty
     el = el.trim();
-    if (all) {
-      return [...document.querySelectorAll(el)];
-    } else {
-      return document.querySelector(el);
+    if (!el) {
+      console.warn('Empty selector provided');
+      return all ? [] : null;
+    }
+    
+    try {
+      if (all) {
+        return [...document.querySelectorAll(el)];
+      } else {
+        return document.querySelector(el);
+      }
+    } catch (error) {
+      console.error('Selector error:', error, 'for selector:', el);
+      return all ? [] : null;
     }
   };
 
@@ -181,6 +198,47 @@
   /**
    * Porfolio isotope and filter
    */
+  // Store references to event listeners for cleanup
+  const eventListeners = {
+    mouseenter: [],
+    mouseleave: [],
+    click: [],
+    beforeunload: null
+  };
+
+  // Cleanup function to remove all event listeners
+  const cleanupEventListeners = () => {
+    // Remove mouseenter and mouseleave listeners
+    eventListeners.mouseenter.forEach(({ element, listener }) => {
+      if (element && element.removeEventListener) {
+        element.removeEventListener("mouseenter", listener);
+      }
+    });
+    eventListeners.mouseleave.forEach(({ element, listener }) => {
+      if (element && element.removeEventListener) {
+        element.removeEventListener("mouseleave", listener);
+      }
+    });
+    
+    // Remove click listeners
+    eventListeners.click.forEach(({ element, listener }) => {
+      if (element && element.removeEventListener) {
+        element.removeEventListener("click", listener);
+      }
+    });
+
+    // Clear arrays
+    eventListeners.mouseenter = [];
+    eventListeners.mouseleave = [];
+    eventListeners.click = [];
+
+    // Remove beforeunload listener
+    if (eventListeners.beforeunload) {
+      window.removeEventListener("beforeunload", eventListeners.beforeunload);
+      eventListeners.beforeunload = null;
+    }
+  };
+
   window.addEventListener("load", () => {
     let portfolioContainer = select(".portfolio-container");
     if (portfolioContainer) {
@@ -221,25 +279,33 @@
           : select(`.portfolio-item${filterClass}`, true).length;
       };
 
-      // Function to handle badge display
+      // Function to handle badge display with stored listeners
       const handleBadgeDisplay = (element, filterClass) => {
         const badge = setupBadge(element);
 
-        // Show badge on hover
-        element.addEventListener("mouseenter", () => {
+        // Create mouseenter listener
+        const mouseenterListener = () => {
           const count = getFilterCount(filterClass);
           badge.textContent = count;
           badge.style.display = "inline-block";
           badge.classList.add("animate__animated", "animate__bounceIn");
-        });
+        };
 
-        // Hide badge on mouse leave
-        element.addEventListener("mouseleave", () => {
+        // Create mouseleave listener
+        const mouseleaveListener = () => {
           if (!element.classList.contains("filter-active")) {
             badge.style.display = "none";
             badge.classList.remove("animate__bounceIn");
           }
-        });
+        };
+
+        // Add listeners and store references
+        element.addEventListener("mouseenter", mouseenterListener);
+        element.addEventListener("mouseleave", mouseleaveListener);
+        
+        // Store references for cleanup
+        eventListeners.mouseenter.push({ element, listener: mouseenterListener });
+        eventListeners.mouseleave.push({ element, listener: mouseleaveListener });
 
         // Initialize badge count (but keep it hidden)
         const count = getFilterCount(filterClass);
@@ -256,45 +322,50 @@
         }
       });
 
-      // Single click handler for filter changes
-      on(
-        "click",
-        "#portfolio-flters li",
-        function (e) {
-          e.preventDefault();
+      // Create click handler function
+      const clickHandler = function (e) {
+        e.preventDefault();
 
-          // Update filter active state
-          portfolioFilters.forEach(function (el) {
-            el.classList.remove("filter-active");
-            // Hide badges on all inactive filters
-            const badge = el.querySelector(".badge");
-            if (badge) {
-              badge.style.display = "none";
-              badge.classList.remove("animate__bounceIn");
-            }
-          });
+        // Update filter active state
+        portfolioFilters.forEach(function (el) {
+          el.classList.remove("filter-active");
+          // Hide badges on all inactive filters
+          const badge = el.querySelector(".badge");
+          if (badge) {
+            badge.style.display = "none";
+            badge.classList.remove("animate__bounceIn");
+          }
+        });
 
-          this.classList.add("filter-active");
+        this.classList.add("filter-active");
 
-          // Show badge for active filter
-          const filterValue = this.getAttribute("data-filter");
-          const badge = setupBadge(this);
-          const count = getFilterCount(filterValue);
-          badge.textContent = count;
-          badge.style.display = "inline-block";
-          badge.classList.add("animate__animated", "animate__bounceIn");
+        // Show badge for active filter
+        const filterValue = this.getAttribute("data-filter");
+        const badge = setupBadge(this);
+        const count = getFilterCount(filterValue);
+        badge.textContent = count;
+        badge.style.display = "inline-block";
+        badge.classList.add("animate__animated", "animate__bounceIn");
 
-          // Arrange items
-          portfolioIsotope.arrange({
-            filter: filterValue,
-          });
+        // Arrange items
+        portfolioIsotope.arrange({
+          filter: filterValue,
+        });
 
-          portfolioIsotope.on("arrangeComplete", function () {
-            AOS.refresh();
-          });
-        },
-        true
-      );
+        portfolioIsotope.on("arrangeComplete", function () {
+          AOS.refresh();
+        });
+      };
+
+      // Add click listeners to all filter elements and store references
+      portfolioFilters.forEach(filterElement => {
+        filterElement.addEventListener("click", clickHandler);
+        eventListeners.click.push({ element: filterElement, listener: clickHandler });
+      });
+
+      // Add beforeunload listener for cleanup
+      eventListeners.beforeunload = cleanupEventListeners;
+      window.addEventListener("beforeunload", eventListeners.beforeunload);
     }
   });
 
