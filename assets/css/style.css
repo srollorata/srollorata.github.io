@@ -507,39 +507,104 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
+.skills-category {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  transition: all 0.3s ease;
 }
 
-.skills .progress .skill {
-  padding: 10px 0;
-  margin: 0;
-  text-transform: uppercase;
-  display: block;
+.skills-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+}
+
+.category-title {
+  font-size: 20px;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  color: #22aaa1;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 10px;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.tool-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+}
+
+.tool-card:hover {
+  background: #22aaa1;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(34, 170, 161, 0.3);
+}
+
+.tool-icon {
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.tool-icon img {
+  width: 32px;
+  height: 32px;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.tool-card:hover .tool-icon img {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+.tool-name {
+  font-size: 12px;
+  font-weight: 500;
   color: #45505b;
+  transition: color 0.3s ease;
 }
 
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
+.tool-card:hover .tool-name {
+  color: white;
 }
 
-.skills .progress-bar-wrap {
-  background: #f2f3f5;
-}
-
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: #22aaa1;
+@media (max-width: 768px) {
+  .tools-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+  }
+  
+  .tool-card {
+    padding: 12px;
+  }
+  
+  .tool-icon img {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .tool-name {
+    font-size: 11px;
+  }
 }
 
 /*--------------------------------------------------------------
