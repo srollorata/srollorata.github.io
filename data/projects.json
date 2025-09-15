@@ -746,12 +746,34 @@
       "category": "Web Development",
       "projectDate": "January 2025",
       "toolsUsed": "Nextjs, Prisma, PostgreSQL, Uploadthing, Clerk",
-      "description": "Tambayan is a personal social media project created by Selwyn Rollorata with NextJs",
+      "description": "Tambayan is a personal social media project created by Selwyn Rollorata while learning NextJs - follow the tutorial on YouTube: Codesistency. The project aims to provide a platform for users to connect, share content, and interact with each other in a user-friendly environment. It features user authentication, profile management, content posting, and real-time notifications.",
       "projectUrl": "https://tambayan-nextjs.vercel.app/",
+      "projectGuide": "https://www.youtube.com/watch?v=vUYopHWOURg",
+      "githubRepo": "https://github.com/srollorata/tambayan-nextjs",
       "images": [
         {
-          "src": "assets/img/portfolio/website/tambayan-logo.png",
-          "caption": "Logo"
+          "src": "assets/img/portfolio/website/tambayan-ufl.png",
+          "caption": "User Feed - Light Mode"
+        },
+        {
+          "src": "assets/img/portfolio/website/tambayan-ufd.png",
+          "caption": "User Feed - Dark Mode"
+        },
+        {
+          "src": "assets/img/portfolio/website/tambayan-unl.png",
+          "caption": "User Notification - Light Mode"
+        },
+        {
+          "src": "assets/img/portfolio/website/tambayan-und.png",
+          "caption": "User Notification - Dark Mode"
+        },
+        {
+          "src": "assets/img/portfolio/website/tambayan-upl.png",
+          "caption": "User Profile - Light Mode"
+        },
+        {
+          "src": "assets/img/portfolio/website/tambayan-upd.png",
+          "caption": "User Profile - Dark Mode"
         }
       ]
     }, 
@@ -775,7 +797,8 @@
           "caption": "Logo Variation 2"
         }
       ]
-    }, {
+    }, 
+    {
       "id": "p046",
       "slug": "gemida",
       "category": "Logo",
@@ -801,7 +824,8 @@
           "caption": "Logo 2nd Reunion" 
         }
       ]
-    }, {
+    }, 
+    {
       "id": "p047",
       "slug": "mare-logo",
       "category": "Logo",
@@ -822,6 +846,26 @@
         }, {
           "src": "assets/img/portfolio/logo/mare-comparison.png",
           "caption": "Comparison from Previous Design"
+        }
+      ]
+    }, 
+    {
+      "id": "p048",
+      "slug": "virtual-pet-rock",
+      "category": "Web Development",
+      "projectDate": "September 2025",
+      "toolsUsed": "Cursor IDE, HTML, CSS, JavaScript, Adobe Photoshop", 
+      "description": "A silly game where you control a “pet” on the screen that reacts when you click it: sometimes happy, sometimes annoyed, sometimes rolling away from your cursor. Built with Cursor AI, HTML, CSS, and JavaScript.",
+      "projectUrl": "https://srollorata.github.io/virtual-pet-rock/",
+      "githubRepo": "https://github.com/srollorata/virtual-pet-rock",
+      "images": [
+        {
+          "src": "assets/img/portfolio/website/virtual-pet-rock/vpr-ui.png",
+          "caption": "Interface"
+        },
+        {
+          "src": "assets/img/portfolio/website/virtual-pet-rock/vpr-sad.png",
+          "caption": "Pet-Rock Sad"
         }
       ]
     }
