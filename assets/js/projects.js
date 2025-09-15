@@ -158,6 +158,8 @@ function updateProjectInfo(project) {
     ${project.relatedEvent ? `<li><strong>Related Event</strong>: ${project.relatedEvent}</li>` : ""}
     ${project.description ? `<li><strong>Description</strong>: ${project.description}</li>` : ""}
     ${project.projectUrl ? `<li><strong>Project URL</strong>: <a href="${project.projectUrl}" target="_blank">${project.projectUrl}</a></li>` : ""}
+    ${project.projectGuide ? `<li><strong>Project Guide</strong>: <a href="${project.projectGuide}" target="_blank">${project.projectGuide}</a></li>` : ""}
+    ${project.githubRepo ? `<li><strong>GitHub Repository</strong>: <a href="${project.githubRepo}" target="_blank">${project.githubRepo}</a></li>` : ""}
     ${!project.hasCustomContainer && project.challenges && project.challenges !== "None" ? `<li><strong>Challenges</strong>: ${project.challenges}</li>` : ""}
     ${!project.hasCustomContainer && project.solution && project.solution !== "None" ? `<li><strong>Solution</strong>: ${project.solution}</li>` : ""}
     ${project.socialLinks ? `
