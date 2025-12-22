@@ -868,6 +868,50 @@
           "caption": "Pet-Rock Sad"
         }
       ]
+    },
+    {
+      "id": "p049",
+      "slug": "csu-summeriwag-2019",
+      "category": "Tarpaulin / Cover",
+      "client": "Caraga State University (Summer Iwag 2019)",
+      "projectDate": "2019",
+      "toolsUsed": "Adobe Photoshop",
+      "challenges": "",
+      "solution": "",
+      "images": [
+        {
+          "src": "assets/img/portfolio/cover/csu_summeriwag_2019/Cover_v1.jpg",
+          "caption": "Front Cover v1"
+        },
+        {
+          "src": "assets/img/portfolio/cover/csu_summeriwag_2019/Cover_v2.jpg",
+          "caption": "Front Cover v2"
+        },
+        {
+          "src": "assets/img/portfolio/cover/csu_summeriwag_2019/Cover_v3.jpg",
+          "caption": "Front Cover v3"
+        },
+        {
+          "src": "assets/img/portfolio/cover/csu_summeriwag_2019/Cover_v4.jpg",
+          "caption": "Front Cover v4"
+        },
+        {
+          "src": "assets/img/portfolio/cover/csu_summeriwag_2019/Back_Final.jpg",
+          "caption": "Back Cover"
+        },
+        {
+          "src": "assets/img/portfolio/cover/csu_summeriwag_2019/CSU Tarp_v1.jpg",
+          "caption": "Tarpaulin v1"
+        },
+        {
+          "src": "assets/img/portfolio/cover/csu_summeriwag_2019/CSU Tarp_v2.jpg",
+          "caption": "Tarpaulin v2"
+        },
+        {
+          "src": "assets/img/portfolio/cover/csu_summeriwag_2019/CSU Tarp_v3.jpg",
+          "caption": "Tarpaulin v3"
+        }
+      ]
     }
   ]
 }
