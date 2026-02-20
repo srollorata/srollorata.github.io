@@ -912,6 +912,24 @@
           "caption": "Tarpaulin v3"
         }
       ]
+    },
+    {
+      "id": "p050",
+      "slug": "gemida-family-site",
+      "category": "Web Development",
+      "projectDate": "July 29, 2025",
+      "toolsUsed": "VSCode, Bolt.new, Cursor, Vercel, Neon/Prisma",
+      "description": "A family management and visualization web app built with Next.js (App Router). It provides user authentication, family tree visualization and management, event & timeline features, image uploads, and an admin interface for the Gemida Family - Kaliwat ni Cresenciano ug Ricarda",
+      "projectUrl": "https://gemida-site.vercel.app",
+      "images": [
+        {
+          "src": "assets/img/portfolio/website/gemida-site/gemida-site.gif",
+          "caption": "Login UI - Dark Mode"
+        }, {
+          "src": "assets/img/portfolio/website/gemida-site/gemida-siteL.gif",
+          "caption": "Login UI - Light Mode"
+        }
+      ]
     }
   ]
 }
