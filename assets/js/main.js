@@ -374,15 +374,24 @@
    */
   const portfolioLightbox = GLightbox({
     selector: ".portfolio-lightbox",
+    touchNavigation: true,
+    loop: true,
+    autoplayVideos: true,
   });
 
   /**
-   * Initiate portfolio details lightbox
+   * Initiate portfolio details lightbox - opens as iframe modal with custom close
    */
   const portfolioDetailsLightbox = GLightbox({
     selector: ".portfolio-details-lightbox",
+    type: "iframe",
     width: "90%",
     height: "90vh",
+    touchNavigation: true,
+    loop: true,
+    autoplayVideos: true,
+    zoomable: false,
+    draggable: false,
   });
 
   /**

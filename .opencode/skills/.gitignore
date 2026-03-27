@@ -1,0 +1,5 @@
+# OpenCode Agent Skills
+# These skill definitions are project-specific and should not be committed
+
+# Ignore skill directories entirely
+.opencode/skills/*/
