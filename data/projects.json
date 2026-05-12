@@ -743,6 +743,12 @@
     {
       "id": "p044",
       "slug": "tambayan",
+      "featured": true,
+      "featuredOrder": 1,
+      "heroImage": "assets/img/portfolio/website/tambayan-ufl.png",
+      "title": "Tambayan — Social Media Platform",
+      "tagline": "A full-stack social media app built while learning Next.js",
+      "role": "Full-Stack Developer",
       "category": "Web Development",
       "projectDate": "January 2025",
       "toolsUsed": "Nextjs, Prisma, PostgreSQL, Uploadthing, Clerk",
@@ -750,6 +756,18 @@
       "projectUrl": "https://tambayan-nextjs.vercel.app/",
       "projectGuide": "https://www.youtube.com/watch?v=vUYopHWOURg",
       "githubRepo": "https://github.com/srollorata/tambayan-nextjs",
+      "caseStudy": {
+        "context": "Tambayan was born from a desire to learn modern full-stack web development. Following a guided tutorial, the project evolved into a fully functional social media platform where users can connect, share content, and interact in real-time.",
+        "challenge": "Building a complete social media experience required mastering several interconnected technologies: server-side rendering with Next.js App Router, database design with Prisma and PostgreSQL, user authentication with Clerk, and file uploads with Uploadthing.",
+        "process": "Started by setting up the Next.js project with App Router architecture. Integrated Clerk for secure authentication, designed the database schema with Prisma ORM connected to PostgreSQL, and built features incrementally — from user profiles to content feeds to real-time notifications.",
+        "outcome": "A fully deployed social media platform with user authentication, profile management, content posting, real-time notifications, and responsive design with both light and dark mode support. Deployed live on Vercel.",
+        "takeaways": [
+          "Gained hands-on experience with Next.js App Router and Server Components",
+          "Learned database design and ORM usage with Prisma and PostgreSQL",
+          "Implemented secure authentication flows with Clerk",
+          "Built a responsive UI with light and dark mode support"
+        ]
+      },
       "images": [
         {
           "src": "assets/img/portfolio/website/tambayan-ufl.png",
@@ -828,11 +846,28 @@
     {
       "id": "p047",
       "slug": "mare-logo",
+      "featured": true,
+      "featuredOrder": 3,
+      "heroImage": "assets/img/portfolio/logo/mare-1.png",
+      "title": "Mare — Brand Identity Redesign",
+      "tagline": "A complete logo and brand identity overhaul for a law professional",
+      "role": "Brand Designer",
       "category": "Logo",
       "projectDate": "February - May 2025",
-      "toolsUsed": "Figma, and Canva", 
-      "description": "",
+      "toolsUsed": "Figma, and Canva",
+      "description": "A complete brand identity redesign for Atty. Rema 'Mare', evolving the visual identity from the previous design to a modern, professional mark.",
       "projectUrl": "https://www.facebook.com/photo/?fbid=122115983042762743&set=a.122107731542762743",
+      "caseStudy": {
+        "context": "Atty. Rema 'Mare' needed a refreshed brand identity that reflected professionalism while maintaining approachability. The existing logo felt dated and lacked versatility across digital and print media.",
+        "challenge": "Creating a logo that balances the gravitas of a legal professional with a warm, approachable personality. The design needed to work across various formats — social media, print materials, and digital platforms — while being distinct and memorable.",
+        "process": "Began with research into legal branding trends and the client's personal brand values. Explored multiple concepts in Figma, iterating on typography and iconography. Developed a cohesive color palette and tested the logo across light and dark backgrounds to ensure versatility.",
+        "outcome": "Delivered a polished, modern logo system with light and dark variants, a defined color palette, and brand guidelines. The redesign was well-received and is now actively used across the client's social media and professional materials.",
+        "takeaways": [
+          "Learned to balance client personality with professional industry expectations",
+          "Developed a systematic approach to brand identity with color palettes and variants",
+          "Practiced iterative design with before/after comparison documentation"
+        ]
+      },
       "images": [
         {
           "src": "assets/img/portfolio/logo/mare-1.png",
@@ -916,11 +951,29 @@
     {
       "id": "p050",
       "slug": "gemida-family-site",
+      "featured": true,
+      "featuredOrder": 2,
+      "heroImage": "assets/img/portfolio/website/gemida-site/gemida-siteL.gif",
+      "title": "Gemida Family — Heritage Web App",
+      "tagline": "A family management and genealogy platform built with Next.js and AI tools",
+      "role": "Full-Stack Developer & Designer",
       "category": "Web Development",
       "projectDate": "July 29, 2025",
       "toolsUsed": "VSCode, Bolt.new, Cursor, Vercel, Neon/Prisma",
       "description": "A family management and visualization web app built with Next.js (App Router). It provides user authentication, family tree visualization and management, event & timeline features, image uploads, and an admin interface for the Gemida Family - Kaliwat ni Cresenciano ug Ricarda",
       "projectUrl": "https://gemida-site.vercel.app",
+      "caseStudy": {
+        "context": "The Gemida family needed a digital home — a place to preserve their genealogy, share events, and keep the family connected across distances. This project was personal: built for my own family, the Kaliwat ni Cresenciano ug Ricarda.",
+        "challenge": "Designing a system that could handle complex family tree relationships, support multiple user roles (admin vs. family members), and provide an intuitive interface for users of varying technical skill levels.",
+        "process": "Leveraged AI-assisted development tools (Bolt.new, Cursor) alongside traditional coding in VSCode to accelerate development. Built on Next.js App Router with Neon/Prisma for the database, Vercel for deployment. Designed the family tree visualization, event timeline, image upload system, and admin interface iteratively.",
+        "outcome": "A fully functional family heritage platform with user authentication, interactive family tree visualization, event management with timeline view, image galleries, and an admin dashboard. Deployed and actively used by the Gemida family.",
+        "takeaways": [
+          "Explored AI-assisted development workflows with Bolt.new and Cursor IDE",
+          "Designed complex data relationships for genealogy trees",
+          "Built for a real user base with diverse technical backgrounds",
+          "Balanced personal passion with professional execution"
+        ]
+      },
       "images": [
         {
           "src": "assets/img/portfolio/website/gemida-site/gemida-site.gif",
@@ -929,6 +982,50 @@
           "src": "assets/img/portfolio/website/gemida-site/gemida-siteL.gif",
           "caption": "Login UI - Light Mode"
         }
+      ]
+    },
+    {
+      "id": "p051",
+      "slug": "blender-30day-challenge",
+      "featured": true,
+      "featuredOrder": 4,
+      "heroImage": "assets/img/portfolio/3d/sceneSWORD.png",
+      "title": "30-Day Blender Challenge",
+      "tagline": "22 3D models created in 30 days — a journey of discipline and creative growth",
+      "role": "3D Artist",
+      "category": "3D Model",
+      "projectDate": "August 25 - September 25, 2024",
+      "toolsUsed": "Blender",
+      "description": "A self-imposed 30-day challenge to create one 3D model per day using Blender, building skills from simple objects to complex compositions.",
+      "caseStudy": {
+        "context": "After completing a DICT-sponsored 3D modeling training in 2021, I wanted to push my Blender skills further. I set myself a 30-day challenge: create one 3D model every day, starting simple and progressively tackling more complex subjects.",
+        "challenge": "Maintaining creative momentum over 30 consecutive days while balancing other responsibilities. Each model needed to show growth — from basic shapes like rugs and cups to detailed objects like swords, game consoles, and architectural scenes.",
+        "process": "Day 1 started with a simple rug. Each subsequent day introduced new techniques: UV mapping, material nodes, lighting setups, and mesh sculpting. Models progressed from everyday objects (cups, jars, candy canes) to more ambitious creations (Flavio's sword from Ang Panday, an ASUS ROG Phone replica, a house scene with a Christmas tree).",
+        "outcome": "Completed 22 distinct 3D models, each viewable as interactive 3D objects on this portfolio. The challenge dramatically improved modeling speed, material understanding, and creative confidence in Blender.",
+        "takeaways": [
+          "Consistency beats perfection — daily practice builds lasting skills",
+          "Progressive difficulty keeps creative challenges engaging",
+          "Documenting progress creates a compelling visual narrative",
+          "Self-imposed deadlines are powerful motivators"
+        ]
+      },
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model",
+      "relatedProjects": ["rug", "fishinghook", "tv", "creditcard", "puddle", "mousepad", "cup", "candycane", "emptyjar", "peppershaker", "jarofpeanutbutter", "bottleofhoney", "shawl", "sword", "rollofducttape", "candybar", "handheldgamesystem", "gamecartridge", "handmirror", "lampshade", "toyboat", "speaker"],
+      "images": [
+        {"src": "assets/img/portfolio/3d/sceneSWORD.png", "caption": "Day 14 - Flavio's Sword"},
+        {"src": "assets/img/portfolio/3d/sceneHANDHELDGAMESYSTEM.png", "caption": "Day 17 - ASUS ROG Phone"},
+        {"src": "assets/img/portfolio/3d/sceneDONUT.png", "caption": "Donut in a Plate"},
+        {"src": "assets/img/portfolio/3d/sceneRUG.png", "caption": "Day 1 - Rug"},
+        {"src": "assets/img/portfolio/3d/sceneCUP.png", "caption": "Day 7 - Cup"},
+        {"src": "assets/img/portfolio/3d/sceneLAMPSHADE.png", "caption": "Day 20 - Lamp Shade"},
+        {"src": "assets/img/portfolio/3d/sceneTOYBOAT.png", "caption": "Day 21 - Toy Boat"},
+        {"src": "assets/img/portfolio/3d/SelwynGemidaRollorata_FinalOutput.jpg", "caption": "House & Christmas Tree (2021 Training)"}
       ]
     }
   ]
