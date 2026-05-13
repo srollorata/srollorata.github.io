@@ -13,19 +13,9 @@
    * Easy selector helper function
    */
   const select = (el, all = false) => {
-    // Validate input parameters
-    if (!el || typeof el !== 'string') {
-      console.warn('Invalid selector provided:', el);
-      return all ? [] : null;
-    }
-    
-    // Trim the selector and validate it's not empty
+    if (!el || typeof el !== 'string') return all ? [] : null;
     el = el.trim();
-    if (!el) {
-      console.warn('Empty selector provided');
-      return all ? [] : null;
-    }
-    
+    if (!el) return all ? [] : null;
     try {
       if (all) {
         return [...document.querySelectorAll(el)];
@@ -83,10 +73,35 @@
   onscroll(document, navbarlinksActive);
 
   /**
+   * Also track mobile navbar active state
+   */
+  let navbarMobileLinks = select("#navbar-mobile .scrollto", true);
+  const navbarMobileLinksActive = () => {
+    let position = window.scrollY + 200;
+    navbarMobileLinks.forEach((navbarlink) => {
+      if (!navbarlink.hash) return;
+      let section = select(navbarlink.hash);
+      if (!section) return;
+      if (
+        position >= section.offsetTop &&
+        position <= section.offsetTop + section.offsetHeight
+      ) {
+        navbarlink.classList.add("active");
+      } else {
+        navbarlink.classList.remove("active");
+      }
+    });
+  };
+  window.addEventListener("load", navbarMobileLinksActive);
+  onscroll(document, navbarMobileLinksActive);
+
+  /**
    * Scrolls to an element with header offset
    */
   const scrollto = (el) => {
-    let elementPos = select(el).offsetTop;
+    let element = select(el);
+    if (!element) return;
+    let elementPos = element.offsetTop;
     window.scrollTo({
       top: elementPos,
       behavior: "smooth",
@@ -119,7 +134,7 @@
   });
 
   /**
-   * Scrool with ofset on links with a class name .scrollto
+   * Scroll with offset on links with a class name .scrollto
    */
   on(
     "click",
@@ -132,8 +147,10 @@
         if (body.classList.contains("mobile-nav-active")) {
           body.classList.remove("mobile-nav-active");
           let navbarToggle = select(".mobile-nav-toggle");
-          navbarToggle.classList.toggle("bi-list");
-          navbarToggle.classList.toggle("bi-x");
+          if (navbarToggle) {
+            navbarToggle.classList.toggle("bi-list");
+            navbarToggle.classList.toggle("bi-x");
+          }
         }
         scrollto(this.hash);
       }
@@ -142,7 +159,7 @@
   );
 
   /**
-   * Scroll with ofset on page load with hash links in the url
+   * Scroll with offset on page load with hash links in the url
    */
   window.addEventListener("load", () => {
     if (window.location.hash) {
@@ -179,66 +196,8 @@
   }
 
   /**
-   * Skills animation
+   * Portfolio isotope and filter (only on archive page)
    */
-  let skilsContent = select(".skills-content");
-  if (skilsContent) {
-    new Waypoint({
-      element: skilsContent,
-      offset: "80%",
-      handler: function (direction) {
-        let progress = select(".progress .progress-bar", true);
-        progress.forEach((el) => {
-          el.style.width = el.getAttribute("aria-valuenow") + "%";
-        });
-      },
-    });
-  }
-
-  /**
-   * Porfolio isotope and filter
-   */
-  // Store references to event listeners for cleanup
-  const eventListeners = {
-    mouseenter: [],
-    mouseleave: [],
-    click: [],
-    beforeunload: null
-  };
-
-  // Cleanup function to remove all event listeners
-  const cleanupEventListeners = () => {
-    // Remove mouseenter and mouseleave listeners
-    eventListeners.mouseenter.forEach(({ element, listener }) => {
-      if (element && element.removeEventListener) {
-        element.removeEventListener("mouseenter", listener);
-      }
-    });
-    eventListeners.mouseleave.forEach(({ element, listener }) => {
-      if (element && element.removeEventListener) {
-        element.removeEventListener("mouseleave", listener);
-      }
-    });
-    
-    // Remove click listeners
-    eventListeners.click.forEach(({ element, listener }) => {
-      if (element && element.removeEventListener) {
-        element.removeEventListener("click", listener);
-      }
-    });
-
-    // Clear arrays
-    eventListeners.mouseenter = [];
-    eventListeners.mouseleave = [];
-    eventListeners.click = [];
-
-    // Remove beforeunload listener
-    if (eventListeners.beforeunload) {
-      window.removeEventListener("beforeunload", eventListeners.beforeunload);
-      eventListeners.beforeunload = null;
-    }
-  };
-
   window.addEventListener("load", () => {
     let portfolioContainer = select(".portfolio-container");
     if (portfolioContainer) {
@@ -248,124 +207,67 @@
 
       let portfolioFilters = select("#portfolio-flters li", true);
 
-      // Define filter categories
-      const filterCategories = [
-        { id: "*", class: "" },
-        { id: ".filter-3d", class: "filter-3d" },
-        { id: ".filter-card", class: "filter-card" },
-        { id: ".filter-cover", class: "filter-cover" },
-        { id: ".filter-logo", class: "filter-logo" },
-        { id: ".filter-photos", class: "filter-photos" },
-        { id: ".filter-tshirt", class: "filter-tshirt" },
-        { id: ".filter-website", class: "filter-website" },
-      ];
+      on(
+        "click",
+        "#portfolio-flters li",
+        function (e) {
+          e.preventDefault();
+          portfolioFilters.forEach(function (el) {
+            el.classList.remove("filter-active");
+            const badge = el.querySelector(".badge");
+            if (badge) {
+              badge.style.display = "none";
+            }
+          });
+          this.classList.add("filter-active");
 
-      // Function to create and setup badge
-      const setupBadge = (element) => {
-        let badge = element.querySelector(".badge");
-        if (!badge) {
-          badge = document.createElement("span");
-          badge.className = "badge";
-          badge.style.display = "none"; // Hide badge by default
-          element.appendChild(badge);
-        }
-        return badge;
-      };
+          const filterValue = this.getAttribute("data-filter");
 
-      // Function to get item count for a filter
-      const getFilterCount = (filterClass) => {
-        return filterClass === "*"
-          ? select(".portfolio-item", true).length
-          : select(`.portfolio-item${filterClass}`, true).length;
-      };
-
-      // Function to handle badge display with stored listeners
-      const handleBadgeDisplay = (element, filterClass) => {
-        const badge = setupBadge(element);
-
-        // Create mouseenter listener
-        const mouseenterListener = () => {
-          const count = getFilterCount(filterClass);
-          badge.textContent = count;
-          badge.style.display = "inline-block";
-          badge.classList.add("animate__animated", "animate__bounceIn");
-        };
-
-        // Create mouseleave listener
-        const mouseleaveListener = () => {
-          if (!element.classList.contains("filter-active")) {
-            badge.style.display = "none";
-            badge.classList.remove("animate__bounceIn");
+          // Show badge
+          let badge = this.querySelector(".badge");
+          if (badge) {
+            const count =
+              filterValue === "*"
+                ? select(".portfolio-item", true).length
+                : select(`.portfolio-item${filterValue}`, true).length;
+            badge.textContent = count;
+            badge.style.display = "inline-block";
+            badge.classList.add("animate__animated", "animate__bounceIn");
           }
-        };
 
-        // Add listeners and store references
-        element.addEventListener("mouseenter", mouseenterListener);
-        element.addEventListener("mouseleave", mouseleaveListener);
-        
-        // Store references for cleanup
-        eventListeners.mouseenter.push({ element, listener: mouseenterListener });
-        eventListeners.mouseleave.push({ element, listener: mouseleaveListener });
+          portfolioIsotope.arrange({ filter: filterValue });
+          portfolioIsotope.on("arrangeComplete", function () {
+            AOS.refresh();
+          });
+        },
+        true
+      );
 
-        // Initialize badge count (but keep it hidden)
-        const count = getFilterCount(filterClass);
-        badge.textContent = count;
-      };
-
-      // Initialize all filters
-      filterCategories.forEach(({ id, class: filterClass }) => {
-        const filterElement = select(
-          `#portfolio-flters li[data-filter="${id}"]`
-        );
-        if (filterElement) {
-          handleBadgeDisplay(filterElement, id);
-        }
-      });
-
-      // Create click handler function
-      const clickHandler = function (e) {
-        e.preventDefault();
-
-        // Update filter active state
-        portfolioFilters.forEach(function (el) {
-          el.classList.remove("filter-active");
-          // Hide badges on all inactive filters
+      // Show badge on hover
+      portfolioFilters.forEach((el) => {
+        el.addEventListener("mouseenter", () => {
+          const filterValue = el.getAttribute("data-filter");
           const badge = el.querySelector(".badge");
           if (badge) {
-            badge.style.display = "none";
-            badge.classList.remove("animate__bounceIn");
+            const count =
+              filterValue === "*"
+                ? select(".portfolio-item", true).length
+                : select(`.portfolio-item${filterValue}`, true).length;
+            badge.textContent = count;
+            badge.style.display = "inline-block";
+            badge.classList.add("animate__animated", "animate__bounceIn");
           }
         });
-
-        this.classList.add("filter-active");
-
-        // Show badge for active filter
-        const filterValue = this.getAttribute("data-filter");
-        const badge = setupBadge(this);
-        const count = getFilterCount(filterValue);
-        badge.textContent = count;
-        badge.style.display = "inline-block";
-        badge.classList.add("animate__animated", "animate__bounceIn");
-
-        // Arrange items
-        portfolioIsotope.arrange({
-          filter: filterValue,
+        el.addEventListener("mouseleave", () => {
+          if (!el.classList.contains("filter-active")) {
+            const badge = el.querySelector(".badge");
+            if (badge) {
+              badge.style.display = "none";
+              badge.classList.remove("animate__bounceIn");
+            }
+          }
         });
-
-        portfolioIsotope.on("arrangeComplete", function () {
-          AOS.refresh();
-        });
-      };
-
-      // Add click listeners to all filter elements and store references
-      portfolioFilters.forEach(filterElement => {
-        filterElement.addEventListener("click", clickHandler);
-        eventListeners.click.push({ element: filterElement, listener: clickHandler });
       });
-
-      // Add beforeunload listener for cleanup
-      eventListeners.beforeunload = cleanupEventListeners;
-      window.addEventListener("beforeunload", eventListeners.beforeunload);
     }
   });
 
@@ -380,7 +282,7 @@
   });
 
   /**
-   * Initiate portfolio details lightbox - opens as iframe modal with custom close
+   * Initiate portfolio details lightbox
    */
   const portfolioDetailsLightbox = GLightbox({
     selector: ".portfolio-details-lightbox",
@@ -412,24 +314,6 @@
   });
 
   /**
-   * Testimonials slider
-   */
-  new Swiper(".testimonials-slider", {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    slidesPerView: "auto",
-    pagination: {
-      el: ".swiper-pagination",
-      type: "bullets",
-      clickable: true,
-    },
-  });
-
-  /**
    * Animation on scroll
    */
   window.addEventListener("load", () => {
@@ -444,5 +328,7 @@
   /**
    * Initiate Pure Counter
    */
-  new PureCounter();
+  if (typeof PureCounter !== "undefined") {
+    new PureCounter();
+  }
 })();

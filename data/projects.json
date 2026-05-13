@@ -743,6 +743,13 @@
     {
       "id": "p044",
       "slug": "tambayan",
+      "featured": true,
+      "featuredOrder": 1,
+      "heroImage": "assets/img/portfolio/website/tambayan-ufl.png",
+      "title": "Tambayan — Social Media Platform",
+      "tagline": "A full-stack social media app built while learning Next.js",
+      "status": "Completed",
+      "role": "Full-Stack Developer",
       "category": "Web Development",
       "projectDate": "January 2025",
       "toolsUsed": "Nextjs, Prisma, PostgreSQL, Uploadthing, Clerk",
@@ -750,6 +757,18 @@
       "projectUrl": "https://tambayan-nextjs.vercel.app/",
       "projectGuide": "https://www.youtube.com/watch?v=vUYopHWOURg",
       "githubRepo": "https://github.com/srollorata/tambayan-nextjs",
+      "caseStudy": {
+        "context": "Tambayan was born from a desire to learn modern full-stack web development. Following a guided tutorial, the project evolved into a fully functional social media platform where users can connect, share content, and interact in real-time.",
+        "challenge": "Building a complete social media experience required mastering several interconnected technologies: server-side rendering with Next.js App Router, database design with Prisma and PostgreSQL, user authentication with Clerk, and file uploads with Uploadthing.",
+        "process": "Following the guided tutorial by Codesistency (YouTube), I started by setting up the Next.js project with App Router architecture. Integrated Clerk for secure authentication, designed the database schema with Prisma ORM connected to PostgreSQL, and built features incrementally — from user profiles to content feeds to real-time notifications.",
+        "outcome": "A fully deployed social media platform with user authentication, profile management, content posting, real-time notifications, and responsive design with both light and dark mode support. Deployed live on Vercel.",
+        "takeaways": [
+          "Gained hands-on experience with Next.js App Router and Server Components",
+          "Learned database design and ORM usage with Prisma and PostgreSQL",
+          "Implemented secure authentication flows with Clerk",
+          "Built a responsive UI with light and dark mode support"
+        ]
+      },
       "images": [
         {
           "src": "assets/img/portfolio/website/tambayan-ufl.png",
@@ -776,7 +795,7 @@
           "caption": "User Profile - Dark Mode"
         }
       ]
-    }, 
+    },
     {
       "id": "p045",
       "slug": "akashiplays-logo",
@@ -789,72 +808,103 @@
         {
           "src": "assets/img/portfolio/logo/akashiPlays.jpg",
           "caption": "Logo"
-        }, {
+        },
+        {
           "src": "assets/img/portfolio/cover/akashiplays_Cover.gif",
-          "caption": "Cover" 
-        }, {
+          "caption": "Cover"
+        },
+        {
           "src": "assets/img/portfolio/cover/akashiYT.png",
           "caption": "Logo Variation 2"
         }
       ]
-    }, 
+    },
     {
       "id": "p046",
       "slug": "gemida",
       "category": "Logo",
       "projectDate": "April - May 2023",
-      "toolsUsed": "Figma, Canva and Adobe Photoshop", 
+      "toolsUsed": "Figma, Canva and Adobe Photoshop",
       "description": "",
       "projectUrl": "",
       "images": [
         {
           "src": "assets/img/portfolio/logo/Logo9 - Concept and Meaning.jpg",
           "caption": "Concept and Meaning"
-        }, {
+        },
+        {
           "src": "assets/img/portfolio/logo/4 (1).png",
           "caption": "Logo with Color"
-        }, {
+        },
+        {
           "src": "assets/img/portfolio/logo/4 (2).png",
           "caption": "Logo with Color"
-        }, {
+        },
+        {
           "src": "assets/img/portfolio/logo/Logo9.jpg",
-          "caption": "Logo 1st Reunion" 
-        }, {
+          "caption": "Logo 1st Reunion"
+        },
+        {
           "src": "assets/img/portfolio/logo/5.png",
-          "caption": "Logo 2nd Reunion" 
+          "caption": "Logo 2nd Reunion"
         }
       ]
-    }, 
+    },
     {
       "id": "p047",
       "slug": "mare-logo",
+      "featured": true,
+      "featuredOrder": 3,
+      "heroImage": "assets/img/portfolio/logo/mare-1.png",
+      "title": "Mare — Brand Identity Redesign",
+      "tagline": "A complete logo and brand identity overhaul for a law professional",
+      "status": "Completed",
+      "role": "Brand Designer",
       "category": "Logo",
       "projectDate": "February - May 2025",
-      "toolsUsed": "Figma, and Canva", 
-      "description": "",
+      "toolsUsed": "Figma, and Canva",
+      "description": "A complete brand identity redesign for Atty. Rema 'Mare', evolving the visual identity from the previous design to a modern, professional mark.",
       "projectUrl": "https://www.facebook.com/photo/?fbid=122115983042762743&set=a.122107731542762743",
+      "caseStudy": {
+        "context": "Atty. Rema 'Mare' needed a refreshed brand identity that reflected professionalism while maintaining approachability. The existing logo felt dated and lacked versatility across digital and print media.",
+        "challenge": "Creating a logo that balances the gravitas of a legal professional with a warm, approachable personality. The design needed to work across various formats — social media, print materials, and digital platforms — while being distinct and memorable.",
+        "process": "Began with research into legal branding trends and the client's personal brand values. Explored multiple concepts in Figma, iterating on typography and iconography. Developed a cohesive color palette and tested the logo across light and dark backgrounds to ensure versatility.",
+        "outcome": "Delivered a polished, modern logo system with light and dark variants, a defined color palette, and brand guidelines. The redesign was well-received and is now actively used across the client's social media and professional materials.",
+        "takeaways": [
+          "Learned to balance client personality with professional industry expectations",
+          "Developed a systematic approach to brand identity with color palettes and variants",
+          "Practiced iterative design with before/after comparison documentation"
+        ]
+      },
       "images": [
         {
           "src": "assets/img/portfolio/logo/mare-1.png",
           "caption": "Light"
-        }, {
+        },
+        {
           "src": "assets/img/portfolio/logo/mare-3.png",
           "caption": "Dark"
-        }, {
+        },
+        {
           "src": "assets/img/portfolio/logo/mare-2.png",
           "caption": "Color Palette"
-        }, {
+        },
+        {
           "src": "assets/img/portfolio/logo/mare-comparison.png",
           "caption": "Comparison from Previous Design"
+        },
+        {
+          "src": "assets/img/portfolio/logo/mare-mockups.jpg",
+          "caption": "Mockups"
         }
       ]
-    }, 
+    },
     {
       "id": "p048",
       "slug": "virtual-pet-rock",
       "category": "Web Development",
       "projectDate": "September 2025",
-      "toolsUsed": "Cursor IDE, HTML, CSS, JavaScript, Adobe Photoshop", 
+      "toolsUsed": "Cursor IDE, HTML, CSS, JavaScript, Adobe Photoshop",
       "description": "A silly game where you control a “pet” on the screen that reacts when you click it: sometimes happy, sometimes annoyed, sometimes rolling away from your cursor. Built with Cursor AI, HTML, CSS, and JavaScript.",
       "projectUrl": "https://srollorata.github.io/virtual-pet-rock/",
       "githubRepo": "https://github.com/srollorata/virtual-pet-rock",
@@ -916,18 +966,208 @@
     {
       "id": "p050",
       "slug": "gemida-family-site",
+      "featured": true,
+      "featuredOrder": 2,
+      "heroImage": "assets/img/portfolio/website/gemida-site/gemida-siteL.gif",
+      "title": "Gemida Family — Heritage Web App",
+      "tagline": "A family management and genealogy platform built with Next.js and AI tools",
+      "status": "In Development",
+      "role": "Full-Stack Developer & Designer",
       "category": "Web Development",
       "projectDate": "July 29, 2025",
       "toolsUsed": "VSCode, Bolt.new, Cursor, Vercel, Neon/Prisma",
       "description": "A family management and visualization web app built with Next.js (App Router). It provides user authentication, family tree visualization and management, event & timeline features, image uploads, and an admin interface for the Gemida Family - Kaliwat ni Cresenciano ug Ricarda",
       "projectUrl": "https://gemida-site.vercel.app",
+      "caseStudy": {
+        "context": "The Gemida family needed a digital home — a place to preserve their genealogy, share events, and keep the family connected across distances. This project was personal: built for my own family, the Kaliwat ni Cresenciano ug Ricarda.",
+        "challenge": "Designing a system that could handle complex family tree relationships, support multiple user roles (admin vs. family members), and provide an intuitive interface for users of varying technical skill levels.",
+        "process": "Leveraged AI-assisted development tools (Bolt.new, Cursor) alongside traditional coding in VSCode to accelerate development. Built on Next.js App Router with Neon/Prisma for the database, Vercel for deployment. Designed the family tree visualization, event timeline, image upload system, and admin interface iteratively.",
+        "outcome": "A fully functional family heritage platform with user authentication, interactive family tree visualization, event management with timeline view, image galleries, and an admin dashboard. Deployed and actively used by the Gemida family. This project is still under development and is continuously improving.",
+        "takeaways": [
+          "Explored AI-assisted development workflows with Bolt.new and Cursor IDE",
+          "Designed complex data relationships for genealogy trees",
+          "Built for a real user base with diverse technical backgrounds",
+          "Balanced personal passion with professional execution"
+        ]
+      },
       "images": [
         {
           "src": "assets/img/portfolio/website/gemida-site/gemida-site.gif",
           "caption": "Login UI - Dark Mode"
-        }, {
+        },
+        {
           "src": "assets/img/portfolio/website/gemida-site/gemida-siteL.gif",
           "caption": "Login UI - Light Mode"
+        },
+        {
+          "src": "assets/img/portfolio/website/gemida-site/brand0-guideline.png",
+          "caption": "Gemida Family - Brand Guidelines"
+        }
+      ]
+    },
+    {
+      "id": "p051",
+      "slug": "blender-30day-challenge",
+      "featured": true,
+      "featuredOrder": 4,
+      "heroImage": "assets/img/portfolio/3d/sceneSWORD.png",
+      "title": "30-Day Blender Challenge",
+      "tagline": "22 3D models created in 30 days — a journey of discipline and creative growth",
+      "status": "Completed",
+      "role": "3D Artist",
+      "category": "3D Model",
+      "projectDate": "August 25 - September 25, 2024",
+      "toolsUsed": "Blender",
+      "description": "A self-imposed 30-day challenge to create one 3D model per day using Blender, building skills from simple objects to complex compositions.",
+      "caseStudy": {
+        "context": "After completing a DICT-sponsored 3D modeling training in 2021, I wanted to push my Blender skills further. I set myself a 30-day challenge: create one 3D model every day, starting simple and progressively tackling more complex subjects.",
+        "challenge": "Maintaining creative momentum over 30 consecutive days while balancing other responsibilities. Each model needed to show growth — from basic shapes like rugs and cups to detailed objects like swords, game consoles, and architectural scenes.",
+        "process": "Day 1 started with a simple rug. Each subsequent day introduced new techniques: UV mapping, material nodes, lighting setups, and mesh sculpting. Models progressed from everyday objects (cups, jars, candy canes) to more ambitious creations (Flavio's sword from Ang Panday, an ASUS ROG Phone replica, a house scene with a Christmas tree).",
+        "outcome": "Completed 22 distinct 3D models, each viewable as interactive 3D objects on this portfolio. The challenge dramatically improved modeling speed, material understanding, and creative confidence in Blender.",
+        "takeaways": [
+          "Consistency beats perfection — daily practice builds lasting skills",
+          "Progressive difficulty keeps creative challenges engaging",
+          "Documenting progress creates a compelling visual narrative",
+          "Self-imposed deadlines are powerful motivators"
+        ]
+      },
+      "modelControls": {
+        "leftClickDrag": "Rotate Object",
+        "scrollUp": "Zoom-In",
+        "scrollDown": "Zoom-Out"
+      },
+      "hasCustomContainer": true,
+      "containerType": "3d-model",
+      "relatedProjects": [
+        "rug",
+        "fishinghook",
+        "tv",
+        "creditcard",
+        "puddle",
+        "mousepad",
+        "cup",
+        "candycane",
+        "emptyjar",
+        "peppershaker",
+        "jarofpeanutbutter",
+        "bottleofhoney",
+        "shawl",
+        "sword",
+        "rollofducttape",
+        "candybar",
+        "handheldgamesystem",
+        "gamecartridge",
+        "handmirror",
+        "lampshade",
+        "toyboat",
+        "speaker"
+      ],
+      "images": [
+        {
+          "src": "assets/img/portfolio/3d/sceneSWORD.png",
+          "caption": "Day 14 - Flavio's Sword"
+        },
+        {
+          "src": "assets/img/portfolio/3d/sceneHANDHELDGAMESYSTEM.png",
+          "caption": "Day 17 - ASUS ROG Phone"
+        },
+        {
+          "src": "assets/img/portfolio/3d/sceneDONUT.png",
+          "caption": "Donut in a Plate"
+        },
+        {
+          "src": "assets/img/portfolio/3d/sceneRUG.png",
+          "caption": "Day 1 - Rug"
+        },
+        {
+          "src": "assets/img/portfolio/3d/sceneCUP.png",
+          "caption": "Day 7 - Cup"
+        },
+        {
+          "src": "assets/img/portfolio/3d/sceneLAMPSHADE.png",
+          "caption": "Day 20 - Lamp Shade"
+        },
+        {
+          "src": "assets/img/portfolio/3d/sceneTOYBOAT.png",
+          "caption": "Day 21 - Toy Boat"
+        },
+        {
+          "src": "assets/img/portfolio/3d/SelwynGemidaRollorata_FinalOutput.jpg",
+          "caption": "House & Christmas Tree (2021 Training)"
+        }
+      ]
+    },
+    {
+      "id": "p052",
+      "slug": "groze",
+      "featured": true,
+      "featuredOrder": 5,
+      "heroImage": "assets/img/portfolio/mobile-dev/groze/logo-dark.png",
+      "title": "Groze — Reality-Synced Grocery Tracker",
+      "tagline": "An offline-first Android app that tracks real-world prices and adapts to how you actually shop",
+      "status": "In Development",
+      "role": "Android Developer & Designer",
+      "category": "Mobile Development",
+      "projectDate": "March 2026",
+      "toolsUsed": "Kotlin, Jetpack Compose, Room, Hilt, MVVM Architecture",
+      "description": "Groze is a realistic, adaptable grocery tracking app that helps users manage spending, track real-world prices, and shop smarter by acknowledging that plans change once you enter the store. Unlike standard checklist apps, Groze freezes your plan when you start shopping, then tracks every deviation — ensuring the app gets smarter with every trip.",
+      "appStoreRef": "https://apps.apple.com/ph/app/grock-grocery-list-tracker/id6759896696",
+      "caseStudy": {
+        "context": "Most grocery apps treat your shopping list as a rigid checklist. But in reality, plans change the moment you walk into the store — items are out of stock, prices differ, and impulse buys happen. Groze was born to bridge the gap between planning and reality.",
+        "challenge": "Building an offline-first Android app with a complex state management system that can freeze a shopping plan, track real-time deviations (deltas), and sync updated prices back to a persistent item vault — all while keeping the UI responsive and intuitive.",
+        "process": "Started with discovery and design adaptation from the iOS counterpart (Grock), mapping screens to Material Design 3 guidelines. Built the foundational data layer with Room database for The Vault, implemented the cart planning and dynamic budget engine, then developed the Active Shopping Mode with plan-freeze and delta tracking. Using Jetpack Compose for reactive UI and Hilt for dependency injection.",
+        "outcome": "Currently in active development with core features including The Vault (personal item repository), flexible cart planning, active shopping mode with plan-freeze, dynamic budget awareness, and finish trip summaries.",
+        "takeaways": [
+          "Designed a 'Planning Freeze & Delta Tracking' system — the signature feature that separates Groze from standard grocery apps",
+          "Implemented offline-first architecture using Room database for persistent local storage",
+          "Applied MVVM architecture with Jetpack Compose for reactive, testable UI",
+          "Managed complex state transitions between planning, active shopping, and trip summary phases"
+        ]
+      },
+      "images": [
+        {
+          "src": "assets/img/portfolio/mobile-dev/groze/brand-guidelines.png",
+          "caption": "Brand Guidelines"
+        },
+        {
+          "src": "assets/img/portfolio/mobile-dev/groze/logo-comparison.jpg",
+          "caption": "Logo Comparison"
+        },
+        {
+          "src": "assets/img/portfolio/mobile-dev/groze/logo-dark.png",
+          "caption": "Logo - Dark"
+        },
+        {
+          "src": "assets/img/portfolio/mobile-dev/groze/logo-light.png",
+          "caption": "Logo - Light"
+        },
+        {
+          "src": "assets/img/portfolio/mobile-dev/groze/mobile-ui/app-launch.jpg",
+          "caption": "App Launch"
+        },
+        {
+          "src": "assets/img/portfolio/mobile-dev/groze/mobile-ui/onboarding-0.jpg",
+          "caption": "Onboarding - Welcome"
+        },
+        {
+          "src": "assets/img/portfolio/mobile-dev/groze/mobile-ui/onboarding-1.jpg",
+          "caption": "Onboarding - Features"
+        },
+        {
+          "src": "assets/img/portfolio/mobile-dev/groze/mobile-ui/onboarding-2.jpg",
+          "caption": "Onboarding - Get Started"
+        },
+        {
+          "src": "assets/img/portfolio/mobile-dev/groze/mobile-ui/vault.jpg",
+          "caption": "The Vault - Item Repository"
+        },
+        {
+          "src": "assets/img/portfolio/mobile-dev/groze/mobile-ui/new-item-to-be-added.jpg",
+          "caption": "Adding a New Item"
+        },
+        {
+          "src": "assets/img/portfolio/mobile-dev/groze/mobile-ui/new-trip.jpg",
+          "caption": "New Trip Planning"
         }
       ]
     }
