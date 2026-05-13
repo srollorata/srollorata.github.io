@@ -1096,6 +1096,80 @@
           "caption": "House & Christmas Tree (2021 Training)"
         }
       ]
+    },
+    {
+      "id": "p052",
+      "slug": "groze",
+      "featured": true,
+      "featuredOrder": 5,
+      "heroImage": "assets/img/portfolio/mobile-dev/groze/logo-dark.png",
+      "title": "Groze — Reality-Synced Grocery Tracker",
+      "tagline": "An offline-first Android app that tracks real-world prices and adapts to how you actually shop",
+      "status": "In Development",
+      "role": "Android Developer & Designer",
+      "category": "Mobile Development",
+      "projectDate": "March 2026",
+      "toolsUsed": "Kotlin, Jetpack Compose, Room, Hilt, MVVM Architecture",
+      "description": "Groze is a realistic, adaptable grocery tracking app that helps users manage spending, track real-world prices, and shop smarter by acknowledging that plans change once you enter the store. Unlike standard checklist apps, Groze freezes your plan when you start shopping, then tracks every deviation — ensuring the app gets smarter with every trip.",
+      "appStoreRef": "https://apps.apple.com/ph/app/grock-grocery-list-tracker/id6759896696",
+      "caseStudy": {
+        "context": "Most grocery apps treat your shopping list as a rigid checklist. But in reality, plans change the moment you walk into the store — items are out of stock, prices differ, and impulse buys happen. Groze was born to bridge the gap between planning and reality.",
+        "challenge": "Building an offline-first Android app with a complex state management system that can freeze a shopping plan, track real-time deviations (deltas), and sync updated prices back to a persistent item vault — all while keeping the UI responsive and intuitive.",
+        "process": "Started with discovery and design adaptation from the iOS counterpart (Grock), mapping screens to Material Design 3 guidelines. Built the foundational data layer with Room database for The Vault, implemented the cart planning and dynamic budget engine, then developed the Active Shopping Mode with plan-freeze and delta tracking. Using Jetpack Compose for reactive UI and Hilt for dependency injection.",
+        "outcome": "Currently in active development with core features including The Vault (personal item repository), flexible cart planning, active shopping mode with plan-freeze, dynamic budget awareness, and finish trip summaries.",
+        "takeaways": [
+          "Designed a 'Planning Freeze & Delta Tracking' system — the signature feature that separates Groze from standard grocery apps",
+          "Implemented offline-first architecture using Room database for persistent local storage",
+          "Applied MVVM architecture with Jetpack Compose for reactive, testable UI",
+          "Managed complex state transitions between planning, active shopping, and trip summary phases"
+        ]
+      },
+      "images": [
+        {
+          "src": "assets/img/portfolio/mobile-dev/groze/brand-guidelines.png",
+          "caption": "Brand Guidelines"
+        },
+        {
+          "src": "assets/img/portfolio/mobile-dev/groze/logo-comparison.jpg",
+          "caption": "Logo Comparison"
+        },
+        {
+          "src": "assets/img/portfolio/mobile-dev/groze/logo-dark.png",
+          "caption": "Logo - Dark"
+        },
+        {
+          "src": "assets/img/portfolio/mobile-dev/groze/logo-light.png",
+          "caption": "Logo - Light"
+        },
+        {
+          "src": "assets/img/portfolio/mobile-dev/groze/mobile-ui/app-launch.jpg",
+          "caption": "App Launch"
+        },
+        {
+          "src": "assets/img/portfolio/mobile-dev/groze/mobile-ui/onboarding-0.jpg",
+          "caption": "Onboarding - Welcome"
+        },
+        {
+          "src": "assets/img/portfolio/mobile-dev/groze/mobile-ui/onboarding-1.jpg",
+          "caption": "Onboarding - Features"
+        },
+        {
+          "src": "assets/img/portfolio/mobile-dev/groze/mobile-ui/onboarding-2.jpg",
+          "caption": "Onboarding - Get Started"
+        },
+        {
+          "src": "assets/img/portfolio/mobile-dev/groze/mobile-ui/vault.jpg",
+          "caption": "The Vault - Item Repository"
+        },
+        {
+          "src": "assets/img/portfolio/mobile-dev/groze/mobile-ui/new-item-to-be-added.jpg",
+          "caption": "Adding a New Item"
+        },
+        {
+          "src": "assets/img/portfolio/mobile-dev/groze/mobile-ui/new-trip.jpg",
+          "caption": "New Trip Planning"
+        }
+      ]
     }
   ]
 }
