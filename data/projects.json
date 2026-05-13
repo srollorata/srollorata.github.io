@@ -748,6 +748,7 @@
       "heroImage": "assets/img/portfolio/website/tambayan-ufl.png",
       "title": "Tambayan — Social Media Platform",
       "tagline": "A full-stack social media app built while learning Next.js",
+      "status": "Completed",
       "role": "Full-Stack Developer",
       "category": "Web Development",
       "projectDate": "January 2025",
@@ -759,7 +760,7 @@
       "caseStudy": {
         "context": "Tambayan was born from a desire to learn modern full-stack web development. Following a guided tutorial, the project evolved into a fully functional social media platform where users can connect, share content, and interact in real-time.",
         "challenge": "Building a complete social media experience required mastering several interconnected technologies: server-side rendering with Next.js App Router, database design with Prisma and PostgreSQL, user authentication with Clerk, and file uploads with Uploadthing.",
-        "process": "Started by setting up the Next.js project with App Router architecture. Integrated Clerk for secure authentication, designed the database schema with Prisma ORM connected to PostgreSQL, and built features incrementally — from user profiles to content feeds to real-time notifications.",
+        "process": "Following the guided tutorial by Codesistency (YouTube), I started by setting up the Next.js project with App Router architecture. Integrated Clerk for secure authentication, designed the database schema with Prisma ORM connected to PostgreSQL, and built features incrementally — from user profiles to content feeds to real-time notifications.",
         "outcome": "A fully deployed social media platform with user authentication, profile management, content posting, real-time notifications, and responsive design with both light and dark mode support. Deployed live on Vercel.",
         "takeaways": [
           "Gained hands-on experience with Next.js App Router and Server Components",
@@ -794,7 +795,7 @@
           "caption": "User Profile - Dark Mode"
         }
       ]
-    }, 
+    },
     {
       "id": "p045",
       "slug": "akashiplays-logo",
@@ -807,42 +808,48 @@
         {
           "src": "assets/img/portfolio/logo/akashiPlays.jpg",
           "caption": "Logo"
-        }, {
+        },
+        {
           "src": "assets/img/portfolio/cover/akashiplays_Cover.gif",
-          "caption": "Cover" 
-        }, {
+          "caption": "Cover"
+        },
+        {
           "src": "assets/img/portfolio/cover/akashiYT.png",
           "caption": "Logo Variation 2"
         }
       ]
-    }, 
+    },
     {
       "id": "p046",
       "slug": "gemida",
       "category": "Logo",
       "projectDate": "April - May 2023",
-      "toolsUsed": "Figma, Canva and Adobe Photoshop", 
+      "toolsUsed": "Figma, Canva and Adobe Photoshop",
       "description": "",
       "projectUrl": "",
       "images": [
         {
           "src": "assets/img/portfolio/logo/Logo9 - Concept and Meaning.jpg",
           "caption": "Concept and Meaning"
-        }, {
+        },
+        {
           "src": "assets/img/portfolio/logo/4 (1).png",
           "caption": "Logo with Color"
-        }, {
+        },
+        {
           "src": "assets/img/portfolio/logo/4 (2).png",
           "caption": "Logo with Color"
-        }, {
+        },
+        {
           "src": "assets/img/portfolio/logo/Logo9.jpg",
-          "caption": "Logo 1st Reunion" 
-        }, {
+          "caption": "Logo 1st Reunion"
+        },
+        {
           "src": "assets/img/portfolio/logo/5.png",
-          "caption": "Logo 2nd Reunion" 
+          "caption": "Logo 2nd Reunion"
         }
       ]
-    }, 
+    },
     {
       "id": "p047",
       "slug": "mare-logo",
@@ -851,6 +858,7 @@
       "heroImage": "assets/img/portfolio/logo/mare-1.png",
       "title": "Mare — Brand Identity Redesign",
       "tagline": "A complete logo and brand identity overhaul for a law professional",
+      "status": "Completed",
       "role": "Brand Designer",
       "category": "Logo",
       "projectDate": "February - May 2025",
@@ -872,24 +880,31 @@
         {
           "src": "assets/img/portfolio/logo/mare-1.png",
           "caption": "Light"
-        }, {
+        },
+        {
           "src": "assets/img/portfolio/logo/mare-3.png",
           "caption": "Dark"
-        }, {
+        },
+        {
           "src": "assets/img/portfolio/logo/mare-2.png",
           "caption": "Color Palette"
-        }, {
+        },
+        {
           "src": "assets/img/portfolio/logo/mare-comparison.png",
           "caption": "Comparison from Previous Design"
+        },
+        {
+          "src": "assets/img/portfolio/logo/mare-mockups.jpg",
+          "caption": "Mockups"
         }
       ]
-    }, 
+    },
     {
       "id": "p048",
       "slug": "virtual-pet-rock",
       "category": "Web Development",
       "projectDate": "September 2025",
-      "toolsUsed": "Cursor IDE, HTML, CSS, JavaScript, Adobe Photoshop", 
+      "toolsUsed": "Cursor IDE, HTML, CSS, JavaScript, Adobe Photoshop",
       "description": "A silly game where you control a “pet” on the screen that reacts when you click it: sometimes happy, sometimes annoyed, sometimes rolling away from your cursor. Built with Cursor AI, HTML, CSS, and JavaScript.",
       "projectUrl": "https://srollorata.github.io/virtual-pet-rock/",
       "githubRepo": "https://github.com/srollorata/virtual-pet-rock",
@@ -956,6 +971,7 @@
       "heroImage": "assets/img/portfolio/website/gemida-site/gemida-siteL.gif",
       "title": "Gemida Family — Heritage Web App",
       "tagline": "A family management and genealogy platform built with Next.js and AI tools",
+      "status": "In Development",
       "role": "Full-Stack Developer & Designer",
       "category": "Web Development",
       "projectDate": "July 29, 2025",
@@ -966,7 +982,7 @@
         "context": "The Gemida family needed a digital home — a place to preserve their genealogy, share events, and keep the family connected across distances. This project was personal: built for my own family, the Kaliwat ni Cresenciano ug Ricarda.",
         "challenge": "Designing a system that could handle complex family tree relationships, support multiple user roles (admin vs. family members), and provide an intuitive interface for users of varying technical skill levels.",
         "process": "Leveraged AI-assisted development tools (Bolt.new, Cursor) alongside traditional coding in VSCode to accelerate development. Built on Next.js App Router with Neon/Prisma for the database, Vercel for deployment. Designed the family tree visualization, event timeline, image upload system, and admin interface iteratively.",
-        "outcome": "A fully functional family heritage platform with user authentication, interactive family tree visualization, event management with timeline view, image galleries, and an admin dashboard. Deployed and actively used by the Gemida family.",
+        "outcome": "A fully functional family heritage platform with user authentication, interactive family tree visualization, event management with timeline view, image galleries, and an admin dashboard. Deployed and actively used by the Gemida family. This project is still under development and is continuously improving.",
         "takeaways": [
           "Explored AI-assisted development workflows with Bolt.new and Cursor IDE",
           "Designed complex data relationships for genealogy trees",
@@ -978,9 +994,14 @@
         {
           "src": "assets/img/portfolio/website/gemida-site/gemida-site.gif",
           "caption": "Login UI - Dark Mode"
-        }, {
+        },
+        {
           "src": "assets/img/portfolio/website/gemida-site/gemida-siteL.gif",
           "caption": "Login UI - Light Mode"
+        },
+        {
+          "src": "assets/img/portfolio/website/gemida-site/brand0-guideline.png",
+          "caption": "Gemida Family - Brand Guidelines"
         }
       ]
     },
@@ -992,6 +1013,7 @@
       "heroImage": "assets/img/portfolio/3d/sceneSWORD.png",
       "title": "30-Day Blender Challenge",
       "tagline": "22 3D models created in 30 days — a journey of discipline and creative growth",
+      "status": "Completed",
       "role": "3D Artist",
       "category": "3D Model",
       "projectDate": "August 25 - September 25, 2024",
@@ -1016,16 +1038,63 @@
       },
       "hasCustomContainer": true,
       "containerType": "3d-model",
-      "relatedProjects": ["rug", "fishinghook", "tv", "creditcard", "puddle", "mousepad", "cup", "candycane", "emptyjar", "peppershaker", "jarofpeanutbutter", "bottleofhoney", "shawl", "sword", "rollofducttape", "candybar", "handheldgamesystem", "gamecartridge", "handmirror", "lampshade", "toyboat", "speaker"],
+      "relatedProjects": [
+        "rug",
+        "fishinghook",
+        "tv",
+        "creditcard",
+        "puddle",
+        "mousepad",
+        "cup",
+        "candycane",
+        "emptyjar",
+        "peppershaker",
+        "jarofpeanutbutter",
+        "bottleofhoney",
+        "shawl",
+        "sword",
+        "rollofducttape",
+        "candybar",
+        "handheldgamesystem",
+        "gamecartridge",
+        "handmirror",
+        "lampshade",
+        "toyboat",
+        "speaker"
+      ],
       "images": [
-        {"src": "assets/img/portfolio/3d/sceneSWORD.png", "caption": "Day 14 - Flavio's Sword"},
-        {"src": "assets/img/portfolio/3d/sceneHANDHELDGAMESYSTEM.png", "caption": "Day 17 - ASUS ROG Phone"},
-        {"src": "assets/img/portfolio/3d/sceneDONUT.png", "caption": "Donut in a Plate"},
-        {"src": "assets/img/portfolio/3d/sceneRUG.png", "caption": "Day 1 - Rug"},
-        {"src": "assets/img/portfolio/3d/sceneCUP.png", "caption": "Day 7 - Cup"},
-        {"src": "assets/img/portfolio/3d/sceneLAMPSHADE.png", "caption": "Day 20 - Lamp Shade"},
-        {"src": "assets/img/portfolio/3d/sceneTOYBOAT.png", "caption": "Day 21 - Toy Boat"},
-        {"src": "assets/img/portfolio/3d/SelwynGemidaRollorata_FinalOutput.jpg", "caption": "House & Christmas Tree (2021 Training)"}
+        {
+          "src": "assets/img/portfolio/3d/sceneSWORD.png",
+          "caption": "Day 14 - Flavio's Sword"
+        },
+        {
+          "src": "assets/img/portfolio/3d/sceneHANDHELDGAMESYSTEM.png",
+          "caption": "Day 17 - ASUS ROG Phone"
+        },
+        {
+          "src": "assets/img/portfolio/3d/sceneDONUT.png",
+          "caption": "Donut in a Plate"
+        },
+        {
+          "src": "assets/img/portfolio/3d/sceneRUG.png",
+          "caption": "Day 1 - Rug"
+        },
+        {
+          "src": "assets/img/portfolio/3d/sceneCUP.png",
+          "caption": "Day 7 - Cup"
+        },
+        {
+          "src": "assets/img/portfolio/3d/sceneLAMPSHADE.png",
+          "caption": "Day 20 - Lamp Shade"
+        },
+        {
+          "src": "assets/img/portfolio/3d/sceneTOYBOAT.png",
+          "caption": "Day 21 - Toy Boat"
+        },
+        {
+          "src": "assets/img/portfolio/3d/SelwynGemidaRollorata_FinalOutput.jpg",
+          "caption": "House & Christmas Tree (2021 Training)"
+        }
       ]
     }
   ]

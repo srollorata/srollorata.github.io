@@ -68,6 +68,14 @@
             </div>`;
         }
 
+        if (project.status) {
+          metaHTML += `
+            <div class="cs-meta-item">
+              <span class="cs-meta-label">Status</span>
+              <span class="cs-meta-value">${project.status}</span>
+            </div>`;
+        }
+
         if (project.role) {
           metaHTML += `
             <div class="cs-meta-item">
