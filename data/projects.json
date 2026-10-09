@@ -751,7 +751,7 @@
       "status": "Completed",
       "role": "Full-Stack Developer",
       "category": "Web Development",
-      "projectDate": "January 2025",
+      "projectDate": "January – February 2025",
       "toolsUsed": "Nextjs, Prisma, PostgreSQL, Uploadthing, Clerk",
       "description": "Tambayan is a personal social media project created by Selwyn Rollorata while learning NextJs - follow the tutorial on YouTube: Codesistency. The project aims to provide a platform for users to connect, share content, and interact with each other in a user-friendly environment. It features user authentication, profile management, content posting, and real-time notifications.",
       "projectUrl": "https://tambayan-nextjs.vercel.app/",
@@ -767,6 +767,131 @@
           "Learned database design and ORM usage with Prisma and PostgreSQL",
           "Implemented secure authentication flows with Clerk",
           "Built a responsive UI with light and dark mode support"
+        ]
+      },
+      "documentary": {
+        "intro": "From a fresh create-next-app scaffold to a deployed full-stack social network in three active days — then twenty months of quiet, and an honest audit. The Tambayan build story, told from the git log: 6 commits · 1 merged PR · 3 active days · 1 author · ~7,300 insertions.",
+        "chapters": [
+          {
+            "kind": "work",
+            "phase": "1",
+            "title": "The Blank Canvas",
+            "date": "January 23, 2025",
+            "narrative": "Every project starts as boilerplate. create-next-app lays down a Next.js 14 App Router scaffold with TypeScript strict mode, Tailwind, self-hosted Geist fonts, and an untouched README — 2,261 lines of possibility and no product. Two days later, the repository would more than triple in a single commit.",
+            "image": "assets/img/portfolio/website/tambayan-logo.png",
+            "imageCaption": "Tambayan wordmark",
+            "highlights": [
+              "be05454 initial commit — 14 files, 2,261 insertions",
+              "Next.js 14.2.15",
+              "App Router + TypeScript strict"
+            ]
+          },
+          {
+            "kind": "work",
+            "phase": "2",
+            "title": "Six Tables and a Schema",
+            "date": "January 25, 2025",
+            "narrative": "The weekend build opens with data. A single prisma/schema.prisma defines the entire social graph: User bridged to Clerk by clerkID, Post, Comment, Like, Follows, and Notification (LIKE/COMMENT/FOLLOW enum). The design leans on composite keys — Follows takes a composite primary key of follower and following, Like takes a @@unique([userID, postID]) constraint that makes duplicate likes impossible at the database level — and every index carries a handwritten comment explaining why it exists. The schema reads like a learning artifact on purpose; it is also the part of the app that has aged best.",
+            "highlights": [
+              "6 models + 1 enum",
+              "Follows composite PK",
+              "Like unique constraint",
+              "applied via prisma db push — no migrations committed"
+            ]
+          },
+          {
+            "kind": "work",
+            "phase": "3",
+            "title": "The Backend That Isn't an API",
+            "date": "January 25, 2025",
+            "narrative": "There is no REST layer anywhere in Tambayan. Four files under src/actions/ — posts, users, profiles, notifications — are the entire backend: Server Actions returning a consistent {success, error} result shape, guarded by getDbUserId(), followed by revalidatePath(\"/\") to purge the cache. The transaction style varies by stakes: like-plus-notification and follow-plus-notification run as array-form prisma.$transaction([...]), while comment-plus-notification upgrades to an interactive prisma.$transaction(async (tx) =&gt; …) callback. Two commit-sized decisions replace a whole API tier.",
+            "highlights": [
+              "4 action modules = the entire API layer",
+              "two $transaction styles",
+              "{success, error} result convention",
+              "revalidatePath cache purging"
+            ]
+          },
+          {
+            "kind": "work",
+            "phase": "4",
+            "title": "Bridging Two Identities",
+            "date": "January 25, 2025",
+            "narrative": "Clerk owns authentication; Prisma owns data — and something has to connect them. clerkMiddleware() guards every route while leaving the feed readable, so signed-out visitors get a full timeline with sign-in CTAs where like, comment, and follow would be. For signed-in users, syncUser() lazily creates the Prisma User row keyed by Clerk's ID, deriving a username from the Clerk username or the email local-part; getDbUserId() then becomes the single authorization primitive every server action calls before touching the database.",
+            "image": "assets/img/portfolio/website/tambayan-upl.png",
+            "imageCaption": "Profile — identity made public (light mode)",
+            "highlights": [
+              "clerkMiddleware route matcher",
+              "syncUser() lazy DB sync",
+              "getDbUserId() as the authorization primitive",
+              "read-only feed for signed-out visitors"
+            ]
+          },
+          {
+            "kind": "work",
+            "phase": "5",
+            "title": "The Feed, Flipped Instantly",
+            "date": "January 25, 2025",
+            "narrative": "The UI's heart is post-card.tsx, 270 lines carrying the whole experience: relative timestamps via date-fns, optimistic likes that flip hasLiked and optimisticLikes in local state and roll back in a catch if the server disagrees, expandable comment threads, and an author-only delete behind a Radix AlertDialog with a server-side ownership check. Around it: a composer with UploadThing image uploads capped at 4 MB, a suggested-users sidebar, unread badges, a three-way theme toggle over next-themes, and a custom green primary (hsl(165 64% 39%)) over self-hosted Geist. Components take their types straight from the server functions — type Posts = Awaited&lt;ReturnType&lt;typeof getPosts&gt;&gt; — so the data layer types the UI for free.",
+            "image": "assets/img/portfolio/website/tambayan-ufl.png",
+            "imageCaption": "Home feed (light mode)",
+            "highlights": [
+              "post-card.tsx — 270 lines",
+              "manual optimistic like with rollback",
+              "UploadThing 4 MB uploads",
+              "Awaited&lt;ReturnType&lt;…&gt;&gt; typing pattern",
+              "light/dark/system themes"
+            ]
+          },
+          {
+            "kind": "work",
+            "phase": "6",
+            "title": "Ship It",
+            "date": "January 25, 2025",
+            "narrative": "The same day, two closing acts. A five-line README credit acknowledges the Codesistency course the build followed — honest provenance for a learning project — and @vercel/analytics goes in with a 43-line commit. The app deploys to Vercel, where postinstall: prisma generate and the environment-backed Clerk/Postgres keys do the rest. Scaffold to production in three calendar days.",
+            "image": "assets/img/portfolio/website/tambayan-ufd.png",
+            "imageCaption": "Home feed, dark mode",
+            "highlights": [
+              "891aa0f README course credit",
+              "4684d43 Vercel Analytics",
+              "live at tambayan-nextjs.vercel.app"
+            ]
+          },
+          {
+            "kind": "work",
+            "phase": "7",
+            "title": "The First PR",
+            "date": "February 6, 2025",
+            "narrative": "Twelve days of silence, then discipline. Work moves to a development branch: the copied 404 page is redesigned with its own styled card, the desktop navbar gains an unread-notification count, a new ui/badge.tsx supports it, and a detailed commit body lists every change. PR #1 merges development into main — the first, and still only, pull request in the repository. It is also the last code main would see.",
+            "image": "assets/img/portfolio/website/tambayan-unl.png",
+            "imageCaption": "Notifications — the badge this commit added (light mode)",
+            "highlights": [
+              "384c259 404 redesign + unread badges + badge.tsx (+131/−9)",
+              "4f7a289 merged PR #1 — srollorata/development → main"
+            ]
+          },
+          {
+            "kind": "pause",
+            "title": "The Long Quiet",
+            "date": "February 2025 – October 2026 (~20 months)",
+            "narrative": "Twenty months of silence. main and origin/development are byte-identical, the working tree is clean, and the notification badge still only updates on a full page load. Side projects don't die during pauses — but this one also never grew its test suite, its pagination, or its real-time layer while it waited."
+          },
+          {
+            "kind": "work",
+            "phase": "8",
+            "title": "The Honest Audit",
+            "date": "October 2026",
+            "narrative": "Re-reading the code a year and a half later, the security posture holds up — server-side ownership checks on delete, Clerk middleware on every route, UploadThing requiring auth, a Prisma singleton that survives hot reload — but the review surfaces real work. Notifications are pull-only: the badge refreshes on mount, so \"real-time\" was always an overstatement. On other people's profiles the page passes the profile owner's ID into PostCard, so like-state and the delete button are computed against the wrong user. getRandomUsers() takes three rows with no ORDER BY at all. The feed fetches every post with every comment and like, unpaginated. And /api/tasks — a dead in-memory demo route — still ships. None of it blocks the app; all of it is the roadmap.",
+            "highlights": [
+              "profile dbUserId viewer bug (profile-page-client.tsx:228)",
+              "pull-only notifications",
+              "getRandomUsers() not random",
+              "no pagination",
+              "dead /api/tasks",
+              "revalidatePath(\"/profile\") mismatch",
+              "syncUser() on every navbar render"
+            ]
+          }
         ]
       },
       "images": [
