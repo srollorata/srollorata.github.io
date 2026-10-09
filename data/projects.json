@@ -974,10 +974,11 @@
       "status": "In Development",
       "role": "Full-Stack Developer & Designer",
       "category": "Web Development",
-      "projectDate": "July 29, 2025",
+      "projectDate": "July 29, 2025 – Present",
       "toolsUsed": "VSCode, Bolt.new, Cursor, Vercel, Neon/Prisma",
       "description": "A family management and visualization web app built with Next.js (App Router). It provides user authentication, family tree visualization and management, event & timeline features, image uploads, and an admin interface for the Gemida Family - Kaliwat ni Cresenciano ug Ricarda",
       "projectUrl": "https://gemida-site.vercel.app",
+      "githubRepo": "https://github.com/srollorata/gemida-site",
       "caseStudy": {
         "context": "The Gemida family needed a digital home — a place to preserve their genealogy, share events, and keep the family connected across distances. This project was personal: built for my own family, the Kaliwat ni Cresenciano ug Ricarda.",
         "challenge": "Designing a system that could handle complex family tree relationships, support multiple user roles (admin vs. family members), and provide an intuitive interface for users of varying technical skill levels.",
@@ -988,6 +989,97 @@
           "Designed complex data relationships for genealogy trees",
           "Built for a real user base with diverse technical backgrounds",
           "Balanced personal passion with professional execution"
+        ]
+      },
+      "documentary": {
+        "intro": "From a weekend AI-generated prototype to a tested, hardened heritage platform — the thirteen-month build story, told from the git log. 61 commits · 20 merged PRs · 14 active days · 1 author.",
+        "chapters": [
+          {
+            "kind": "work",
+            "phase": "1",
+            "title": "The Weekend Prototype",
+            "date": "July 29–31, 2025",
+            "narrative": "The project begins not with a blank editor but with a prompt. A Bolt.new scaffold dumps 76 files and 14,187 lines into a fresh repository — Next.js, a login screen, admin pages, events, a timeline, and a GoJS family tree, all wired to mock data. Two follow-up commits add a member details panel and zoom/pan to the tree. PR #1 merges. It works — sort of.",
+            "highlights": [
+              "9995384 first commit",
+              "76 files, 14,187 insertions",
+              "Merged PR #1"
+            ]
+          },
+          {
+            "kind": "pause",
+            "title": "The Long Pause",
+            "date": "August–December 2025 (~5 months)",
+            "narrative": "Five months of dormancy. The prototype sits on GitHub — a skeleton of mock data with no database, no real auth, and no path to production. Semester demands and other projects pull focus. Side projects don't die during pauses; they wait."
+          },
+          {
+            "kind": "work",
+            "phase": "2",
+            "title": "Rebuilding on Real Data",
+            "date": "December 23, 2025",
+            "narrative": "One intense day. The mock data dies. Admin pages get API-backed CRUD, the family tree gets a management surface, and image uploads arrive with loading states. Three PRs land the same day. The app stops being a demo and starts being a system.",
+            "highlights": [
+              "11e5d8e admin family tree management",
+              "3b278be API-backed CRUD",
+              "108b4e7 image uploads + loading states"
+            ]
+          },
+          {
+            "kind": "work",
+            "phase": "3",
+            "title": "Feature Buildout",
+            "date": "January 4–6, 2026",
+            "narrative": "Back-to-back sessions: user profile API, initial project docs, then event status with timeline sync and API validation on a dedicated feat-events-and-timeline branch, an admin members list with pagination via user-management, and GoJS refinements. By PR #9, the core feature surface — auth, family tree, events, timeline, admin, profile — exists.",
+            "highlights": [
+              "22f7df8 user profile API",
+              "48800b8 event status + timeline sync (PR #7)",
+              "d69caa1 admin members pagination (PR #8)"
+            ]
+          },
+          {
+            "kind": "work",
+            "phase": "4",
+            "title": "Security & Identity",
+            "date": "February 17–21, 2026",
+            "narrative": "The turning point. First a security pass: auth secured, admin checks moved server-side, uploads hardened, Node runtime pinned for API routes. Then the repo grows a conscience — brand-identity, code-review, and anti-pattern agent skills; a full UI theming refactor; a WCAG contrast-audit script; and a data-model rename from relationship to gender with proper event subtypes. Thirteen commits in five days — the app gains both a lock and a face.",
+            "highlights": [
+              "3f0a9b4 secure auth, admin checks, uploads (PR #11)",
+              "a70657d brand-identity skill (PR #14)",
+              "71e428b anti-patterns + contrast audit (PR #17)",
+              "40b2137 relationship → gender rename (PR #18)"
+            ]
+          },
+          {
+            "kind": "work",
+            "phase": "5",
+            "title": "Going Responsive",
+            "date": "March 22, 2026",
+            "narrative": "A single PR reworks the responsive layout and adds mobile navigation. Families don't all gather around desktops.",
+            "highlights": [
+              "44980dd responsive layout + mobile nav (PR #19)"
+            ]
+          },
+          {
+            "kind": "pause",
+            "title": "The Second Pause",
+            "date": "March–July 2026 (~3.5 months)",
+            "narrative": "The same gravity as before — a pause, not an ending."
+          },
+          {
+            "kind": "work",
+            "phase": "6",
+            "title": "The Advisor Sprint",
+            "date": "July 8 – August 3, 2026",
+            "narrative": "The project returns with a new discipline: numbered advisor branches, each named after a specific review finding. advisor/001 replaces broken localStorage auth with cookie-based requests. advisor/002 locks timeline mutations behind requireAdmin. Then the busiest day in the project's history — August 3: sixteen commits landing a rate-limit fix, Node runtime on the users route, a full Vitest API-integration suite (auth, events, family-members), an orphaned-events restore, a cascade-delete fix with test coverage, a verification baseline, and the merge of development into main. Nine advisor branches in all; the last, 009, sketches the next chapter — person detail pages and a gallery. The repository now has a test suite where there was none.",
+            "highlights": [
+              "2098b04 cookie-based auth fix (advisor/001, PR #20)",
+              "fca27a5 rate-limit fix (advisor/003)",
+              "80c2df8–0899cc7 Vitest API test suite (advisor/005)",
+              "4bc5a5f cascade-delete fix + test (advisor/007)",
+              "cf6eac2 merge development → main",
+              "36cd50e person-pages design (advisor/009, current tip)"
+            ]
+          }
         ]
       },
       "images": [
