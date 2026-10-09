@@ -199,6 +199,40 @@
         takeawaysSection.style.display = "none";
       }
 
+      // --- Documentary Timeline ---
+      const docSection = document.getElementById("cs-documentary");
+      const docIntro = document.getElementById("cs-doc-intro");
+      const docTimeline = document.getElementById("cs-doc-timeline");
+
+      if (docTimeline && project.documentary && project.documentary.chapters) {
+        const doc = project.documentary;
+        if (docIntro && doc.intro) docIntro.textContent = doc.intro;
+
+        docTimeline.innerHTML = doc.chapters.map((ch) => {
+          if (ch.kind === "pause") {
+            return `
+              <div class="cs-doc-chapter cs-doc-pause" data-aos="fade-up">
+                <span class="cs-doc-date">${ch.date}</span>
+                <h3 class="cs-doc-title"><i class="bi bi-moon-stars"></i> ${ch.title}</h3>
+                <p class="cs-doc-narrative">${ch.narrative}</p>
+              </div>`;
+          }
+          return `
+            <div class="cs-doc-chapter" data-aos="fade-up">
+              <span class="cs-doc-phase">Phase ${ch.phase}</span>
+              <span class="cs-doc-date">${ch.date}</span>
+              <h3 class="cs-doc-title">${ch.title}</h3>
+              <p class="cs-doc-narrative">${ch.narrative}</p>
+              ${ch.highlights && ch.highlights.length ? `
+                <ul class="cs-doc-highlights">
+                  ${ch.highlights.map((h) => `<li><i class="bi bi-git"></i> ${h}</li>`).join("")}
+                </ul>` : ""}
+            </div>`;
+        }).join("");
+      } else if (docSection) {
+        docSection.style.display = "none";
+      }
+
       // --- Prev/Next Navigation ---
       const navGrid = document.getElementById("cs-nav-grid");
       if (navGrid) {
