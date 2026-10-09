@@ -1200,10 +1200,11 @@
       "status": "In Development",
       "role": "Android Developer & Designer",
       "category": "Mobile Development",
-      "projectDate": "March 2026",
+      "projectDate": "March 2026 – Present",
       "toolsUsed": "Kotlin, Jetpack Compose, Room, Hilt, MVVM Architecture",
       "description": "Groze is a realistic, adaptable grocery tracking app that helps users manage spending, track real-world prices, and shop smarter by acknowledging that plans change once you enter the store. Unlike standard checklist apps, Groze freezes your plan when you start shopping, then tracks every deviation — ensuring the app gets smarter with every trip.",
       "appStoreRef": "https://apps.apple.com/ph/app/grock-grocery-list-tracker/id6759896696",
+      "githubRepo": "https://github.com/srollorata/groze-android",
       "caseStudy": {
         "context": "I built Groze to solve my own Note Overload. My Google Keep was filled with dozens of repetitive shopping lists, none of which talked to each other. I realized I was losing valuable information—specifically, price trends and product availability.\n\nGroze replaces the \"disposable list\" workflow with a persistent, offline-first tracker. It’s designed for the power user who wants to know exactly what they spent last month, what they’re likely to spend today, and keep it all synced to the reality of the local shop floor.",
         "challenge": "Building an offline-first Android app with a complex state management system that can freeze a shopping plan, track real-time deviations (deltas), and sync updated prices back to a persistent item vault — all while keeping the UI responsive and intuitive.",
@@ -1214,6 +1215,87 @@
           "Implemented offline-first architecture using Room database for persistent local storage",
           "Applied MVVM architecture with Jetpack Compose for reactive, testable UI",
           "Managed complex state transitions between planning, active shopping, and trip summary phases"
+        ]
+      },
+      "documentary": {
+        "intro": "From an empty repository to a working, multi-currency grocery tracker in five working days — the Groze build story, told from the git log. 17 commits · 3 merged PRs · 5 active days · 1 author · ~7,356 insertions.",
+        "chapters": [
+          {
+            "kind": "work",
+            "phase": "1",
+            "title": "The Skeleton in a Day",
+            "date": "March 25, 2026",
+            "narrative": "One commit turns an empty repo into a running app: 53 files, 5,408 lines — Room schema v1 with three DAOs and entities, a Hilt database module, a navigation host with bottom bar, and the full screen set already in place (Vault, Trip Plan, Active Trip with its ad-hoc item and price-update sheets, Trip Summary, onboarding, and Plan/Shop/History tabs). The same day adds a settings screen with theme toggle and currency selection, a fix for the post-trip Vault-to-History redirect, and README/gitignore cleanup. PR #1 merges — the Android answer to the iOS Grock has a skeleton.",
+            "image": "assets/img/portfolio/mobile-dev/groze/mobile-ui/app-launch.jpg",
+            "imageCaption": "App Launch",
+            "highlights": [
+              "d86f4ac 53 files, 5,408 insertions",
+              "b46eda8 settings + theme toggle",
+              "e7df527 post-trip redirect fix",
+              "Merged PR #1"
+            ]
+          },
+          {
+            "kind": "work",
+            "phase": "2",
+            "title": "Painting It Dark",
+            "date": "March 26, 2026",
+            "narrative": "A full-screen pass the day after the skeleton lands: dark mode enabled across every screen — bottom bar, history, plan, shop, ad-hoc and price sheets — ripping out hardcoded colors (82 insertions, 124 deletions), then a redesign of the settings, trip management, and Vault screens with a new color palette (272 insertions, 200 deletions). The app stops looking like a scaffold and starts looking designed.",
+            "image": "assets/img/portfolio/mobile-dev/groze/mobile-ui/new-trip.jpg",
+            "imageCaption": "New Trip Planning",
+            "highlights": [
+              "c6cb6d5 dark mode across all screens",
+              "5c6f9f0 settings/trip/vault UI + palette"
+            ]
+          },
+          {
+            "kind": "work",
+            "phase": "3",
+            "title": "Quantity, Debt & Docs",
+            "date": "March 27, 2026",
+            "narrative": "Cart items gain quantities across repository, screens, view models, and sheets (+261 lines) — PR #2 lands. Then a hard look at the app's biggest file: 115 insertions and 94 deletions paying down layout, typography, and UX debt in ActiveTripScreen. The README gains project-structure and database documentation. PR #3 merges to main — the last merge main would see for months.",
+            "image": "assets/img/portfolio/mobile-dev/groze/mobile-ui/new-item-to-be-added.jpg",
+            "imageCaption": "Adding a New Item",
+            "highlights": [
+              "8c46e36 quantity management (PR #2)",
+              "56f6dd4 ActiveTripScreen debt refactor",
+              "93a2d01 README structure + DB docs",
+              "Merged PR #3"
+            ]
+          },
+          {
+            "kind": "work",
+            "phase": "4",
+            "title": "Branding & the Goal Board",
+            "date": "April 9, 2026",
+            "narrative": "Two weeks pass; work resumes off main, on development. Launcher icons are rebuilt with new branding — play-store icon, adaptive foregrounds, five density buckets. Then the repo grows a written conscience: a GOAL.md state-tracker carrying the MVP checklist (onboarding, vault, cart planning, active shopping, trip summary, history — all checked), two named bugs (a finished trip that won't leave Active Shopping; a dead \"add as new item\" path), and five planned features including currency selection, dark mode, and category templates.",
+            "image": "assets/img/portfolio/mobile-dev/groze/logo-comparison.jpg",
+            "imageCaption": "Logo Comparison",
+            "highlights": [
+              "6a7e8fc launcher icon rebrand",
+              "9f18bdc GOAL.md — 6 done, 2 bugs, 5 planned"
+            ]
+          },
+          {
+            "kind": "work",
+            "phase": "5",
+            "title": "Beyond the Checkout Counter",
+            "date": "April 28, 2026",
+            "narrative": "The offline-first rule breaks — deliberately. A Retrofit service and Hilt network module bring live exchange rates; a repository with fallback rates keeps the app working when the network doesn't; CurrencyFormatter and CurrencyManager thread the chosen currency through nine screens and view models. 544 insertions in a single commit — the largest since the skeleton. It sits on development, unmerged.",
+            "image": "assets/img/portfolio/mobile-dev/groze/mobile-ui/vault.jpg",
+            "imageCaption": "The Vault — Item Repository",
+            "highlights": [
+              "2afb43d multi-currency + exchange rates",
+              "27 files, 544 insertions",
+              "data/remote/ — first network layer"
+            ]
+          },
+          {
+            "kind": "pause",
+            "title": "The Quiet",
+            "date": "May – October 2026 (~5.5 months)",
+            "narrative": "Five and a half months of silence. development sits five commits ahead of main, unmerged; the goal board still lists its two open bugs. The README's status badge says in development, and that remains true — the project isn't abandoned, it's waiting for its next session."
+          }
         ]
       },
       "images": [

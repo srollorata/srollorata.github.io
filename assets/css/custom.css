@@ -1422,6 +1422,52 @@
   margin-right: auto;
 }
 
+/* Chapter screenshots */
+.cs-doc-chapter--media .cs-doc-narrative {
+  margin-bottom: 0;
+}
+
+.cs-doc-media {
+  margin-top: 18px;
+}
+
+.cs-doc-chapter--media {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  grid-template-areas:
+    "phase media"
+    "date media"
+    "title media"
+    "narrative media"
+    "highlights media";
+  column-gap: 24px;
+  align-items: start;
+}
+
+.cs-doc-chapter--media .cs-doc-phase { grid-area: phase; justify-self: start; }
+.cs-doc-chapter--media .cs-doc-date { grid-area: date; }
+.cs-doc-chapter--media .cs-doc-title { grid-area: title; }
+.cs-doc-chapter--media .cs-doc-narrative { grid-area: narrative; }
+.cs-doc-chapter--media .cs-doc-highlights { grid-area: highlights; }
+.cs-doc-chapter--media .cs-doc-media { grid-area: media; margin-top: 0; align-self: start; }
+
+.cs-doc-media img {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+  object-fit: contain;
+  background: #f8f9fa;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.cs-doc-media-caption {
+  display: block;
+  margin-top: 8px;
+  font-size: 11px;
+  text-align: center;
+  color: #636e72;
+}
+
 /* Documentary responsive */
 @media (max-width: 768px) {
   .cs-doc-timeline {
@@ -1451,5 +1497,13 @@
 
   .cs-doc-date {
     margin-top: 4px;
+  }
+
+  .cs-doc-chapter--media {
+    display: block;
+  }
+
+  .cs-doc-chapter--media .cs-doc-media {
+    margin-top: 18px;
   }
 }
