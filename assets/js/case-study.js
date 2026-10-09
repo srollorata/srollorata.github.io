@@ -218,11 +218,16 @@
               </div>`;
           }
           return `
-            <div class="cs-doc-chapter" data-aos="fade-up">
+            <div class="cs-doc-chapter${ch.image ? " cs-doc-chapter--media" : ""}" data-aos="fade-up">
               <span class="cs-doc-phase">Phase ${ch.phase}</span>
               <span class="cs-doc-date">${ch.date}</span>
               <h3 class="cs-doc-title">${ch.title}</h3>
               <p class="cs-doc-narrative">${ch.narrative}</p>
+              ${ch.image ? `
+              <div class="cs-doc-media">
+                <img src="${ch.image}" alt="${ch.imageCaption || ch.title}" loading="lazy" />
+                ${ch.imageCaption ? `<span class="cs-doc-media-caption">${ch.imageCaption}</span>` : ""}
+              </div>` : ""}
               ${ch.highlights && ch.highlights.length ? `
                 <ul class="cs-doc-highlights">
                   ${ch.highlights.map((h) => `<li><i class="bi bi-git"></i> ${h}</li>`).join("")}
